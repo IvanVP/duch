@@ -1,3 +1,12 @@
+PATH
+  remote: ../gemsref20/refinerycms_membership
+  specs:
+    refinerycms-memberships (2.0.3)
+      nokogiri (~> 1.5.0)
+      refinerycms-core (>= 2.0.0)
+      refinerycms-settings (>= 2.0.0)
+      webrat (~> 0.7.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,6 +88,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.9.2)
+    nokogiri (1.5.11)
     orm_adapter (0.0.7)
     paper_trail (2.7.2)
       activerecord (~> 3.0)
@@ -99,6 +109,9 @@ GEM
       activesupport (= 3.2.17)
       bundler (~> 1.0)
       railties (= 3.2.17)
+    rails-i18n (3.0.1)
+      i18n (~> 0.5)
+      rails (>= 3.0.0, < 4.0.0)
     railties (3.2.17)
       actionpack (= 3.2.17)
       activesupport (= 3.2.17)
@@ -181,6 +194,10 @@ GEM
       json (>= 1.8.0)
     warden (1.1.1)
       rack (>= 1.0)
+    webrat (0.7.3)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
     will_paginate (3.0.5)
 
 PLATFORMS
@@ -193,8 +210,10 @@ DEPENDENCIES
   globalize3 (= 0.3.0)
   jquery-rails (~> 2.0.0)
   rails (= 3.2.17)
+  rails-i18n (~> 3.0.0)
   refinerycms (~> 2.0.0)
   refinerycms-i18n (~> 2.0.0)
+  refinerycms-memberships!
   refinerycms-settings (~> 2.0.3)
   sass-rails (~> 3.2.3)
   sqlite3

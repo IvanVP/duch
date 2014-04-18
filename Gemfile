@@ -11,7 +11,7 @@ end
 
 gem "figaro"
 gem "better_errors", ">= 0.3.2", :group => :development
-
+gem 'rails-i18n', '~> 3.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -55,3 +55,10 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 gem "globalize3", "0.3.0"
 
 gem 'refinerycms-settings', '~> 2.0.3'
+
+# Forked from here https://github.com/web-challenge-2013/refinerycms_membership/tree/webchallenge2013
+# gem 'refinerycms-memberships', :path => '../gemsref20/refinerycms_membership-webchallenge2013'
+
+gem 'refinerycms-memberships', :path => '../gemsref20/refinerycms_membership'
+
+#:git => 'git://github.com/web-challenge-2013/refinerycms_membership.git', :branch => 'webchallenge2013'
