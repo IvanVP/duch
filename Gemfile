@@ -12,6 +12,8 @@ end
 gem "figaro"
 gem "better_errors", ">= 0.3.2", :group => :development
 
+gem 'haml', '~> 4.0.5'
+gem 'thin', '~> 1.6.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,15 +45,16 @@ gem 'jquery-rails', '~> 2.0.0'
 # gem 'debugger'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms', '~> 2.0.0', :path => '../gemsref20/refinerycms-2-0-stable'
 
 # Specify additional Refinery CMS Extensions here (all optional):
-gem 'refinerycms-i18n', '~> 2.0.0'
+gem 'refinerycms-i18n', '~> 2.0.0', :path => '../gemsref20/refinerycms-i18n-2-0-stable'
 
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
+
 gem "globalize3", "0.3.0"
 
 gem 'refinerycms-settings', :path => '../gemsref20/refinerycms-settings-2-0-stable'
