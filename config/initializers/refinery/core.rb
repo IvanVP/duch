@@ -43,6 +43,36 @@ Refinery::Core.configure do |config|
 
   # Add extra tags to the wymeditor whitelist e.g. = {'tag' => {'attributes' => {'1' => 'href'}}} or just {'tag' => {}}
   # config.wymeditor_whitelist_tags = {}
+  config.wymeditor_whitelist_tags = {
+    'video' => {
+      'attributes' => {
+        '1' => 'width',
+        '2' => 'height',
+        '3' => 'poster'
+      }
+    },
+    'source' => {
+      'attributes' => {
+        '1' => 'src',
+        '2' => 'type'
+      }
+    },
+    'audio' => {
+      'attributes' => {
+        '1' => 'preload',
+        '2' => 'autoplay',
+        '3' => 'loop',
+        '4' => 'controls',
+        '5' => 'source'
+      }
+    },
+    'source' => {
+      'attributes' => {
+        '1' => 'src',
+        '2' => 'type'
+      }
+    }
+  }
 
   # Register extra javascript for backend
   config.register_javascript "prototype-rails"

@@ -42,6 +42,14 @@ PATH
       refinerycms-core (= 2.0.10)
 
 PATH
+  remote: ../gemsref20/refinerycms-audiojs
+  specs:
+    refinerycms-audiojs (0.0.1)
+      dragonfly
+      rack-cache
+      refinerycms-core
+
+PATH
   remote: ../gemsref20/refinerycms-i18n-2-0-stable
   specs:
     refinerycms-i18n (2.0.2)
@@ -54,6 +62,14 @@ PATH
     refinerycms-settings (2.0.3)
       acts_as_indexed (~> 0.7.7)
       refinerycms-core (~> 2.0.10)
+
+PATH
+  remote: ../gemsref20/refinerycms-videojs-master
+  specs:
+    refinerycms-videojs (0.5.5.1)
+      dragonfly
+      rack-cache
+      refinerycms-core
 
 PATH
   remote: ../gemsref20/refinerycms_membership
@@ -229,9 +245,11 @@ DEPENDENCIES
   jquery-rails (~> 2.0.0)
   rails (= 3.2.17)
   refinerycms (~> 2.0.0)!
+  refinerycms-audiojs!
   refinerycms-i18n (~> 2.0.0)!
   refinerycms-memberships!
   refinerycms-settings!
+  refinerycms-videojs!
   sass-rails (~> 3.2.3)
   sqlite3
   thin (~> 1.6.2)

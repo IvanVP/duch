@@ -60,3 +60,5 @@ gem "globalize3", "0.3.0"
 gem 'refinerycms-settings', :path => '../gemsref20/refinerycms-settings-2-0-stable'
 
 gem 'refinerycms-memberships', :path => '../gemsref20/refinerycms_membership'
+gem 'refinerycms-audiojs', :path => '../gemsref20/refinerycms-audiojs'
+gem 'refinerycms-videojs', :path => '../gemsref20/refinerycms-videojs-master'
