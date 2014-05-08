@@ -3,6 +3,7 @@
 en:
   wym_tools:
     add_audio: Audio 
+    add_video: Video
   refinery:
     admin:
       dashboard:

@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require audio
 //= require audiojs_init
+//= require videojs_loader

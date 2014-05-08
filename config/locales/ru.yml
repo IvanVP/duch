@@ -324,3 +324,6 @@ ru:
         file_name: Имя файла
         file_size: Размер файла
         file_ext: Расширение файла
+  # ДЛя VideoJS
+  wym_tools:
+    add_video: Видео
