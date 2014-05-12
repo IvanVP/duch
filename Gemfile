@@ -33,7 +33,7 @@ gem 'jquery-rails', '~> 2.0.0'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -62,3 +62,5 @@ gem 'refinerycms-settings', :path => '../gemsref20/refinerycms-settings-2-0-stab
 gem 'refinerycms-memberships', :path => '../gemsref20/refinerycms_membership'
 gem 'refinerycms-audiojs', :path => '../gemsref20/refinerycms-audiojs'
 gem 'refinerycms-videojs', :path => '../gemsref20/refinerycms-videojs-master'
+
+gem 'refinerycms-news', '~> 2.0.0', :path => '../gemsref20/refinerycms-news-2-0-stable'

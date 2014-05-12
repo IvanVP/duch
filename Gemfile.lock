@@ -76,6 +76,14 @@ PATH
       refinerycms-settings (~> 2.0.1)
 
 PATH
+  remote: ../gemsref20/refinerycms-news-2-0-stable
+  specs:
+    refinerycms-news (2.0.1)
+      friendly_id (~> 4.0.1)
+      refinerycms-core (~> 2.0.1)
+      refinerycms-settings (~> 2.0.0)
+
+PATH
   remote: ../gemsref20/refinerycms-page-images-2-0-stable
   specs:
     refinerycms-page-images (2.0.1)
@@ -190,6 +198,9 @@ GEM
       tilt
     hike (1.2.3)
     i18n (0.6.9)
+    jbuilder (2.0.7)
+      activesupport (>= 3.0.0, < 5)
+      multi_json (~> 1.2)
     journey (1.0.4)
     jquery-rails (2.0.3)
       railties (>= 3.1.0, < 5.0)
@@ -279,6 +290,7 @@ DEPENDENCIES
   figaro
   globalize3 (= 0.3.0)
   haml (~> 4.0.5)
+  jbuilder
   jquery-rails (~> 2.0.0)
   rails (= 3.2.17)
   refinerycms (~> 2.0.0)!
@@ -287,6 +299,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.0.0)!
   refinerycms-inquiries (~> 2.0.0)!
   refinerycms-memberships!
+  refinerycms-news (~> 2.0.0)!
   refinerycms-page-images (~> 2.0.0)!
   refinerycms-search (~> 2.0.0)!
   refinerycms-settings!
