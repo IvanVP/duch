@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140512120822) do
+ActiveRecord::Schema.define(:version => 20140512123002) do
 
   create_table "refinery_audio_files", :force => true do |t|
     t.string   "file_name"

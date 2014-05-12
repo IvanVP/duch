@@ -52,7 +52,7 @@ gem 'refinerycms-i18n', '~> 2.0.0', :path => '../gemsref20/refinerycms-i18n-2-0-
 
  gem 'refinerycms-blog', '~> 2.0.0', :path => '../gemsref20/refinerycms-blog-2-0-stable'
  gem 'refinerycms-inquiries', '~> 2.0.0', :path => '../gemsref20/refinerycms-inquiries-2-0-stable'
-#  gem 'refinerycms-search', '~> 2.0.0'
+ gem 'refinerycms-search', '~> 2.0.0', :path => '../gemsref20/refinerycms-search-2-0-stable'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
 gem "globalize3", "0.3.0"

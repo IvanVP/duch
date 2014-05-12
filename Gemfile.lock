@@ -76,6 +76,12 @@ PATH
       refinerycms-settings (~> 2.0.1)
 
 PATH
+  remote: ../gemsref20/refinerycms-search-2-0-stable
+  specs:
+    refinerycms-search (2.0.0)
+      refinerycms-core (~> 2.0.4)
+
+PATH
   remote: ../gemsref20/refinerycms-settings-2-0-stable
   specs:
     refinerycms-settings (2.0.3)
@@ -275,6 +281,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.0.0)!
   refinerycms-inquiries (~> 2.0.0)!
   refinerycms-memberships!
+  refinerycms-search (~> 2.0.0)!
   refinerycms-settings!
   refinerycms-videojs!
   sass-rails (~> 3.2.3)
