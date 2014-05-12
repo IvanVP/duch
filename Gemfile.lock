@@ -68,6 +68,14 @@ PATH
       routing-filter (>= 0.2.3)
 
 PATH
+  remote: ../gemsref20/refinerycms-inquiries-2-0-stable
+  specs:
+    refinerycms-inquiries (2.0.3)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 2.0.1)
+      refinerycms-settings (~> 2.0.1)
+
+PATH
   remote: ../gemsref20/refinerycms-settings-2-0-stable
   specs:
     refinerycms-settings (2.0.3)
@@ -265,6 +273,7 @@ DEPENDENCIES
   refinerycms-audiojs!
   refinerycms-blog (~> 2.0.0)!
   refinerycms-i18n (~> 2.0.0)!
+  refinerycms-inquiries (~> 2.0.0)!
   refinerycms-memberships!
   refinerycms-settings!
   refinerycms-videojs!

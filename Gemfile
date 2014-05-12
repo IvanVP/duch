@@ -51,7 +51,7 @@ gem 'refinerycms', '~> 2.0.0', :path => '../gemsref20/refinerycms-2-0-stable'
 gem 'refinerycms-i18n', '~> 2.0.0', :path => '../gemsref20/refinerycms-i18n-2-0-stable'
 
  gem 'refinerycms-blog', '~> 2.0.0', :path => '../gemsref20/refinerycms-blog-2-0-stable'
-#  gem 'refinerycms-inquiries', '~> 2.0.0'
+ gem 'refinerycms-inquiries', '~> 2.0.0', :path => '../gemsref20/refinerycms-inquiries-2-0-stable'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
