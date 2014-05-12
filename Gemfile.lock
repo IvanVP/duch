@@ -76,6 +76,12 @@ PATH
       refinerycms-settings (~> 2.0.1)
 
 PATH
+  remote: ../gemsref20/refinerycms-page-images-2-0-stable
+  specs:
+    refinerycms-page-images (2.0.1)
+      refinerycms-pages (~> 2.0.0)
+
+PATH
   remote: ../gemsref20/refinerycms-search-2-0-stable
   specs:
     refinerycms-search (2.0.0)
@@ -281,6 +287,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.0.0)!
   refinerycms-inquiries (~> 2.0.0)!
   refinerycms-memberships!
+  refinerycms-page-images (~> 2.0.0)!
   refinerycms-search (~> 2.0.0)!
   refinerycms-settings!
   refinerycms-videojs!
