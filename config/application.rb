@@ -63,6 +63,7 @@ module Duch
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.action_view.sanitized_allowed_tags = %w( audio source )
     config.action_view.sanitized_allowed_attributes = %w( preview autoload loop controls src type )
 

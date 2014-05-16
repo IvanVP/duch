@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body id="home-boxes" data-spy="scroll" data-offset="75">
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <div class="wrapper container">
+      <header class="header clearfix">
+        <%= render '/refinery/header' -%>
+      </header>
+
+      <!-- <section class="topbar clearfix"> -->
+        <%= render '/homepage/poster' -%>
+        <%# render '/homepage/photocut' -%>
+        <section class="postwrapper clearfix">
+            <div class="container">
+                <div class="row"> 
+                   
+              <!-- "Это 9 колонок HOMEPAGE" -->
+                  <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                      <div class="row text-center">
+                          <div class="title">
+                              <h1>Наши проекты</h1>
+                              <hr>
+                              <p class="lead">Учимся и отдыхаем вместе</p>
+                          </div>
+                      </div> 
+                         
+                              
+                          
+                      
+                      <div class="portfolio-wrap clearfix">
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 first">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/101.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Увеличить" title="" rel="prettyPhoto" href="dyxfoto/101.jpg"><i class="fa fa-expand"></i></a></span>
+
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> На горной реке</span></div>
+                              </div><!-- media_element -->
+                              
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">На горной реке</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+                          
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 last">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/102.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/102.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> Поездка в горы</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">Поездка в горы</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+                          
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 first">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/103.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/103.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> Индия</span></div>
+                              </div><!-- media_element -->
+                              
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">Индия</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+                          
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 last">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/104.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/104.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> На отдыхе</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">На отдыхе</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+                          
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 first">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/105.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/105.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> Прекрасный вид</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">Прекрасный вид</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 last">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/106.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/106.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> Отличное настроение</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">Отличное настроение</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 first">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/107.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/107.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> У стены</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">У стены</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 last">
+                              <div class="portfolio_classic">
+                              <div class="media_element ImageWrapper boxes_img">
+                                  <a href="index2.html"><img src="dyxfoto/108.jpg" alt=""></a>
+                                  <div class="ImageOverlayH blue"></div>
+                                  <div class="Buttons StyleSc">
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="index2.html"><i class="fa fa-vk"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="index2.html"><i class="fa fa-link"></i></a></span>
+                                      <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="View item" title="" rel="prettyPhoto" href="dyxfoto/108.jpg"><i class="fa fa-expand"></i></a></span>
+                                  </div><!-- Buttons -->
+                                  <div class="StyleBe"><span><i class="fa fa-picture-o"></i> Китай</span></div>
+                              </div><!-- media_element -->
+
+                              <div class="portfolio_desc">
+                                  <div class="title1">
+                                      <h3><a href="index2.html">Китай</a></h3>
+                                      <hr>
+                                  </div>
+                              </div><!-- end portfolio_desc -->
+                              
+                              </div><!-- end portfolio_classic -->
+                          </div><!-- end col-lg-6 -->
+                                   
+                      </div><!-- portfolio-wrap -->
+
+                      <div class="post_desc">
+                          <p>Существует много школ, много путей, много дорог…</p>
+                          <p>Различные учения, опирающиеся на тысячелетний опыт цивилизаций и мировоззрений, дают разные ответы и рекомендуют разные пути развития человека. Методики Школы вобрали в себя много ценного из известных восточных и западных учений. Простые и понятные упражнения дают возможность увидеть и принять себя и окружающий мир, научиться жить в Любви и гармонии, радуясь каждому мгновению. Основные задачи Школы: осознание себя Творцом своей жизни, раскрытие своих творческих возможностей и достижение более высокого уровня осознанности; осознание Души и формирование сознания человека 21 века. Школа существует с 1995 г</p>
+                          <p>Руководитель Школы – Липец Николай Владимирович</p>
+                          <p>«Развитие Осознанности и Интуиции» – авторский курс занятий руководителя Школы  
+                          Липеца Николая Владимировича. Это базовый курс Школы действует при содействии с Московским институтом психоанализа, занятия которого помогают: 
+                          <ul>
+                              <li>Выйти за свои привычные представления о жизни;
+                              <li>Снять груз депрессий, стрессов;</li>
+                              <li>Выйти из кругов постоянных проблем;</li>
+                              <li>Освободиться от иллюзий и привязанностей;</li>
+                              <li>Раскрыть свой творческий потенциал;</li>
+                              <li>Раскрыть в себе источник Любви, Радости и полноты Жизни;</li>
+                              <li>Осознать себя, осознать мир, в котором мы живем;</li>
+                              <li>Осознать путь своей Души.</li>
+                          </ul>
+                          <p>В основе курса – авторские методики Н.В.Липеца, современные и древние духовные и психологические практики, медитации, психотехники.</p>
+                      </div>  
+                  </div><!-- end col-lg-12 -->
+              <!-- "Это 7 колонок SIDEBAR PAGE" -->
+                  <div id="content" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                      <div class="widget">
+                          <div class="title"><h3>О нас</h3></div>
+                          <ul class="nav nav-tabs nav-stacked">
+                              <li><a href="#">История школы</a></li>
+                              <li><a href="#">Наши преподаватели</a></li>
+                              <li><a href="#">Выездные тренинги</a></li>
+                              <li><a href="#">Фотогалерея, видео</a></li>
+                              <li><a href="#">Наше творчество</a></li>
+                          </ul>                              
+                      </div>
+                  </div>
+              <!-- "Это 2 колонок SIDEBAR PAGE" -->
+
+                  <div id="content" class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                      <div class="row text-center">
+                          <div class="title">
+                              <h1>Наши проекты</h1>
+                              <hr>
+                              <p class="lead">Глубокое дыхание</p>
+                          </div>
+                      </div>
+                      <div class="post_desc"> 
+                          <p>Практика дает глубокую проработку проблем Вашей личности. С помощью интенсивных дыхательных техник вы входите в измененное состояние сознания, открываетесь своему «Высшему Я». В этом состоянии происходит спонтанная проработка ваших психологических проблем, комплексов и стереотипов. Вы раскроете внутренние резервы вашего сознания и психики, получите мощный позитивный импульс для жизни, здоровья, работы.</p>
+                      </div>
+                      <div class="media_element">
+                          <div id="blogslider" class="flexslider clearfix">
+                              <ul class="slides">
+                                  <li><img src="dyxfoto/301.jpg" alt=""></li>
+                                  <li><img src="dyxfoto/12.jpg" alt=""></li>
+                                  <li><img src="dyxfoto/11.jpg" alt=""></li>
+                              </ul><!-- end slides -->
+                          </div><!-- end slider -->
+                      </div><!-- media_element -->
+
+
+                      <div class="post_desc">    
+                          <p>Цикл занятий на основе медитативных и оздоровительных практик, способствующий восстановлению и коррекции зрения. Если у Вас близорукость, дальнозоркость, астигматизм, катаракта, атрофия зрительного нерва и др., - приглашаем Вас на занятия по восстановлению и коррекции зрения.В программе занятий: физические упражнения для глаз, медитация, психотехники, выход на причины болезней и устранения их.</p>  
+                          <p>Психологический тренинг, включающий техники по осознанию своего тела, психологические игры, физические и энергетические упражнения, медитации.</p>
+                  
+                          <p>Цель тренинга: обретение уверенности в себе, повышение работоспособности, гармонизация взаимоотношений с людьми, снятие стрессов, освобождение энергии тела, обретение навыков общения со своим телом, раскрытие внутренних резервов.</p>
+                  
+                          <p>В основе техники: cовременные методы телесной терапии, гештальт-терапии, психогенеза, медитативные техники.</p>
+                           
+                          <p>Этот тренинг является авторской разработкой Липеца Николая Владимировича, и направлен он прежде всего на снятие «панцирей» и зажимов, которые перекрывают свободное течение жизненной энергии в теле, вызывая как раз-личные заболевания и депрессивные состояния, так и трудности в каких-либо областях жизни человека. Застой приводит к фиксации энергетических блоков на той или иной группе мышц, создавая в них напряжение, становящееся со временем хроническим. Так появляется «мышечный панцирь», который можно считать универсальным эквивалентом подавления эмоций. А так как в человеке все взаимосвязано, то «мышечный панцирь» поддерживает собой и «панцирь эмоций» (стандартные реакции на стандартные ситуации), и «панцирь сознания» (стереотипы мышления, набор понятий и суждений). На тренинге наша работа направлена прежде всего на снятие «мышечного панциря» и частично «панциря эмоций», но, вследствие того, что человек един, вместе с улучшением внутреннего состояния, видимые изменения после тренинга часто происходят и в сфере социальных взаимоотношений.</p>
+                           
+                          <p>Телесные тренинги проводятся в нашей школе с 1995 года. За это время программа тренинга обновлялась и дополнялась в соответствии с потребностями времени и нашим внутренним ростом. Таким образом, одинаковых тренингов не бывает. Тренинг живет и меняется вместе с нами и, несмотря на видимую простоту и даже детскость некоторых упражнений тренинга, мы не перестаем удивляться тому, какую сильную жизненную энергию он открывает в людях! Определенный настрой и насыщенная программа тренинга, наполненная событиями и переживаниями, ускоряет психологическое время участников, помогая приобрести опыт, который в обыкновенной жизни достигается месяцами или даже годами.</p>
+
+                          <p>Прошедшие первый тренинг приглашаются на тренинг 2 «Изменение состояния сознания через движение». </p> 
+                                  
+                        
+                         
+                          <p>Различные учения, опирающиеся на тысячелетний опыт цивилизаций и мировоззрений, дают разные ответы и рекомендуют разные пути развития человека. Методики Школы вобрали в себя много ценного из известных восточных и западных учений. Простые и понятные упражнения дают возможность увидеть и принять себя и окружающий мир, научиться жить в Любви и гармонии, радуясь каждому мгновению. Основные задачи Школы: осознание себя Творцом своей жизни, раскрытие своих творческих возможностей и достижение более высокого уровня осознанности; осознание Души и формирование сознания человека 21 века. Школа существует с 1995 г</p>
+                          <p>Руководитель Школы – Липец Николай Владимирович</p>
+                      </div>  
+                  </div><!-- end col-lg-12 -->
+              <!-- "Это 3 колонки ОБЩИЕ" -->
+                  
+                  <div id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                      <div class="widget">
+                          <form action="#" id="search_form">
+                              <input type="text" class="form-control" placeholder="Поиск">     
+                          </form><!-- end search form -->
+                      </div><!-- end widget -->
+
+                      <div class="widget">
+                          <div class="title"><h3>Новости</h3></div>
+                          <ul class="recent_posts_widget">
+                              <li>
+                                  <a href="#">Начинается зачисление на новый курс</a>
+                                  <a class="readmore" href="#">14 мая 2014</a>
+                              </li>
+                              <li>
+                                  <a href="#">Поездка в Индию</a>
+                                  <a class="readmore" href="#">21 мая 2014</a>
+                              </li>
+                              <li>
+                                  <a href="#">Однодневный семинар</a>
+                                  <a class="readmore" href="#">30 мая 2014</a>
+                              </li>
+                          </ul><!-- recent posts -->                              
+                      </div><!-- end widget -->
+
+                      <div class="widget">
+                          <form role="form">
+                          <div class="title"><h3>Подписаться на новости</h3></div>  
+                            <div class="form-group">
+                              <label for="exampleInputName1">Ваше имя</label>
+                              <input type="text" name="name1" id="name1" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Ваш email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                            </div>
+                            
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Нажми меня
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                          </form>
+                      </div>
+
+                      <div class="title">
+                          <h3>Календарь</h3>
+                      </div>
+                      <div class="widget">
+                         
+                          <div class="title1"><h4>Май</h3></div>
+                          <table border="1">
+                          <tr><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">1</span></td><td><span class="date">2</span></td><td><span class="date">3</span></td></tr>
+                          <tr><td><span class="date">4</span></td><td><span class="date">5</span></td><td><span class="date">6</span></td><td><span class="date">7</span></td><td><span class="date">8</span></td><td><span class="date">9</span></td><td><span class="date">10</span></td></tr>
+                          <tr><td><span class="date">11</span></td><td><span class="date">12</span></td><td><span class="date">13</span></td><td><span class="date">14</span></td><td><span class="date">15</span></td><td><span class="date">16</span></td><td><span class="date">17</span></td></tr>
+                          <tr><td><span class="date">18</span></td><td><span class="date">19</span></td><td><span class="date">20</span></td><td><span class="date">21</span></td><td><span class="date">22</span></td><td><span class="date">23</span></td><td><span class="date">24</span></td></tr>
+                          <tr><td><span class="date">25</span></td><td><span class="date">26</span></td><td><span class="date">27</span></td><td><span class="date">28</span></td><td><span class="date">29</span></td><td><span class="date">30</span></td><td><span class="date">31</span></td></tr>
+                          </table>
+                                                       
+                      </div>
+
+                      <div class="widget">
+                          <div class="title1"><h4>Июнь</h3></div>
+                          <table border="1">
+                          <tr><td><span class="date">1</span></td><td><span class="date">2</span></td><td><span class="date">3</span></td><td><span class="date">4</span></td><td><span class="date">5</span></td><td><span class="date">6</span></td><td><span class="date">7</span></td></tr>
+                          <tr><td><span class="date">8</span></td><td><span class="date">9</span></td><td><span class="date">10</span></td><td><span class="date">11</span></td><td><span class="date">12</span></td><td><span class="date">13</span></td><td><span class="date">14</span></td></tr>
+                          <tr><td><span class="date">15</span></td><td><span class="date">16</span></td><td><span class="date">17</span></td><td><span class="date">18</span></td><td><span class="date">19</span></td><td><span class="date">20</span></td><td><span class="date">21</span></td></tr>
+                          <tr><td><span class="date">22</span></td><td><span class="date">23</span></td><td><span class="date">24</span></td><td><span class="date">25</span></td><td><span class="date">26</span></td><td><span class="date">27</span></td><td><span class="date">28</span></td></tr>
+                          <tr><td><span class="date">29</span></td><td><span class="date">30</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td></tr>
+                          </table>
+                                                       
+                      </div>
+
+                      <div class="widget">
+                          <div class="title"><h3>Блог</h3></div>
+                          <ul class="recent_posts_widget">
+                              <li>
+                                  <a href="#">
+                                  <img src="dyxfoto/201.gif" alt="" />Семинар на Алтае 
+                                  </a>
+                                  <a class="readmore" href="#">14 апреля 2014</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                  <img src="dyxfoto/202.gif" alt="" />Заочное обучение в Москве 
+                                  </a>
+                                  <a class="readmore" href="#">10 мая 2014</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                  <img src="dyxfoto/404.gif" alt="">Прошел семинар на общую тему 
+                                  </a>
+                                  <a class="readmore" href="#">22 мая 2014</a>
+                              </li>
+                          </ul><!-- recent posts -->                              
+                      </div><!-- end widget -->
+                  </div><!-- end sidebar -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end postwrapper -->
+
+        <%= yield %>
+     <!--  </section> -->
+      <footer>
+        <%= render '/refinery/footer' -%>
+      </footer>
+    </div><!-- end wrapper --> 
+    <div class="dmtop">
+      Наверх   
+    </div><!-- end dmtop -->      
+    <%= render '/refinery/javascripts' %>
+    <% content_for :javascripts do %>
+      <%= javascript_include_tag 'application.js' %>
+    <% end %>
+ 
+
+     
+
+  <script>
+    (function($) {
+    "use strict"
+
+      $('.dropdown-toggle').dropdownHover().dropdown();
+        $(document).on('click', '.fhmm .dropdown-menu', function(e) {
+          e.stopPropagation()
+      })
+
+      jQuery('.header').affix({
+        offset: { top: $('.header').offset().top }
+      });
+
+    // Search
+      var $ctsearch = $( '#dmsearch' ),
+        $ctsearchinput = $ctsearch.find('input.dmsearch-input'),
+        $body = $('html,body'),
+        openSearch = function() {
+          $ctsearch.data('open',true).addClass('dmsearch-open');
+          $ctsearchinput.focus();
+          return false;
+        },
+        closeSearch = function() {
+          $ctsearch.data('open',false).removeClass('dmsearch-open');
+        };
+
+      $ctsearchinput.on('click',function(e) { e.stopPropagation(); $ctsearch.data('open',true); });
+
+      $ctsearch.on('click',function(e) {
+        e.stopPropagation();
+        if( !$ctsearch.data('open') ) {
+
+          openSearch();
+
+          $body.off( 'click' ).on( 'click', function(e) {
+            closeSearch();
+          } );
+
+        }
+        else {
+          if( $ctsearchinput.val() === '' ) {
+            closeSearch();
+            return false;
+          }
+        }
+      });
+
+    // Back to Top
+      jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 1) {
+            jQuery('.dmtop').css({bottom:"25px"});
+          } else {
+            jQuery('.dmtop').css({bottom:"-100px"});
+          }
+        });
+        jQuery('.dmtop').click(function(){
+          jQuery('html, body').animate({scrollTop: '0px'}, 800);
+          return false;
+      });  
+
+    })(jQuery);
+  </script>
+    
+    <%= render '/refinery/google_analytics' %>
+  </body>
+</html>

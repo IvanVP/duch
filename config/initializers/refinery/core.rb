@@ -26,10 +26,10 @@ Refinery::Core.configure do |config|
   config.authenticity_token_on_frontend = true
 
   # Hide/show child pages in menu
-  # config.menu_hide_children = false
+  config.menu_hide_children = false
 
   # CSS class selectors for menu helper
-  config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
+  config.menu_css = {:selected=>"selected", :open => "open", :first=>"first", :last=>"last"}
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
