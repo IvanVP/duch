@@ -17,3 +17,4 @@
 //= require audiojs_init
 //= require videojs_loader
 //= require fhmm
+//= require jquery.prettyPhoto

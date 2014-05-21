@@ -23,3 +23,9 @@ Refinery::Search::Engine.load_seed
 
 # Added by Refinery CMS News engine
 Refinery::News::Engine.load_seed
+
+# Added by Refinery CMS Portfolio Engine
+Refinery::Portfolio::Engine.load_seed
+
+# Added by Refinery CMS Venues extension
+Refinery::Calendar::Engine.load_seed

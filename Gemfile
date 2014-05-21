@@ -64,3 +64,11 @@ gem 'refinerycms-audiojs', :path => '../gemsref20/refinerycms-audiojs'
 gem 'refinerycms-videojs', :path => '../gemsref20/refinerycms-videojs-master'
 
 gem 'refinerycms-news', '~> 2.0.0', :path => '../gemsref20/refinerycms-news-2-0-stable'
+
+
+gem 'refinerycms-portfolio', :path => '../gemsref20/refinerycms-portfolio-2-0-stable-fotorama'
+
+gem 'refinerycms-calendar', :path => '../gemsref20/refinerycms-calendar-danielres-2.0'
+
+
+gem 'stringex', '~> 2.5.2'

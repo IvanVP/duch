@@ -1,0 +1,7 @@
+<div class="widget">
+  <%= form_tag refinery.search_path do -%>
+    <%= text_field_tag :query, {}, {:type => "search", :placeholder => "Поиск",
+                       :class => "form-control", :id => "search_form",
+                       :value => (params[:query] if params[:query])} %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<div class="widget">
+    <div class="title">
+        <h3>Новости</h3>
+    </div>
+    <ul id="recent_news_items">
+        <% ::Refinery::News::Items.each do |item| %>
+            <li><%= link_to item.title, refinery.news_item_path(item) %></li>
+        <% end %>
+    </ul>                             
+</div>

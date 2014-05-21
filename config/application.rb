@@ -69,5 +69,10 @@ module Duch
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.to_prepare do
+      Refinery.searchable_models = [Refinery::Page, Refinery::News::Item, Refinery::Image, Refinery::Audios::Audio, Refinery::Blog::Post, Refinery::Blog::Comment, Refinery::Blog::Category, Refinery::Resource,  Refinery::Videos::Video ]
+    end
+
   end
 end
