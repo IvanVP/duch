@@ -11,6 +11,7 @@ end
 
 gem "figaro"
 gem "better_errors", ">= 0.3.2", :group => :development
+gem "binding_of_caller", :group => :development
 
 gem 'haml', '~> 4.0.5'
 gem 'thin', '~> 1.6.2'
