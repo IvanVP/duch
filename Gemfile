@@ -30,6 +30,7 @@ end
 
 gem 'jquery-rails', '~> 2.0.0'
 
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -56,7 +57,8 @@ gem 'refinerycms-i18n', '~> 2.0.0', :path => '../gemsref20/refinerycms-i18n-2-0-
  gem 'refinerycms-search', '~> 2.0.0', :path => '../gemsref20/refinerycms-search-2-0-stable'
  gem 'refinerycms-page-images', '~> 2.0.0', :path => '../gemsref20/refinerycms-page-images-2-0-stable'
 
-gem "globalize3", "0.3.0"
+# gem "globalize3", "0.3.0"
+gem "globalize", "3.0.0"
 
 gem 'refinerycms-settings', :path => '../gemsref20/refinerycms-settings-2-0-stable'
 
@@ -73,3 +75,5 @@ gem 'refinerycms-calendar', :path => '../gemsref20/refinerycms-calendar-danielre
 
 
 gem 'stringex', '~> 2.5.2'
+
+gem "watu_table_builder", :require => "table_builder", :git => "git://github.com/watu/table_builder.git"

@@ -1,0 +1,31 @@
+<div class="title">
+    <h5>Календарь</h5>
+</div>
+<div class="widget smallcal" >
+  <div class="title">
+    <h6>
+      <%#= link_to "<", date: Date.today.prev_month %>
+    <%#= @date.strftime("%B %Y") %>
+    <%#= link_to ">", date: Date.today.next_month %>
+    Май
+    </h6>
+  </div>
+  <%= calendar do |date| %>
+    <%= date.day %>
+  <% end %>
+
+  <div class="title">
+    <h6>
+      <%#= link_to "<", date: Date.today.prev_month %>
+    <%#= @date.strftime("%B %Y") %>
+    <%#= link_to ">", date: Date.today.next_month %>
+    Июнь
+    </h6>
+  </div>
+  <%= calendarnextmonth do |date| %>
+    <%= date.day %>
+  <% end %>
+  
+
+
+</div>

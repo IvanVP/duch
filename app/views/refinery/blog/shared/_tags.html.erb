@@ -1,0 +1,8 @@
+<% if Refinery::Blog::Category::ActsAsTaggableOn::Tag.any? %>
+  <h5><%= t('.title') %></h5>
+  <nav id='tags'>
+    <% tag_cloud(Refinery::Blog::Post.tag_counts, %w(tag1 tag2 tag3 tag4)) do |tag, css_class| %>
+      <%= link_to tag.name, refinery.blog_tagged_posts_path(tag.id, tag.name.parameterize), :class => css_class %>
+    <% end %>
+  </nav>
+<% end %>

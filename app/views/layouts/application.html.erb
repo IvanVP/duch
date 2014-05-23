@@ -10,7 +10,6 @@
         <%= render 'refinery/header' -%>
       </header>
       <%= render 'layouts/poster' -%>
-      
         
       <section class="postwrapper clearfix">
           <div class="container">
@@ -20,30 +19,18 @@
               <% else %>
                 <%= render 'layouts/main' -%>
               <% end %>
-              
-              <div id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <%= render 'sidebar/search' -%>
-                <%= render 'sidebar/calendar_small' -%>
-                <%# latest_news -%>
-                <%= render 'refinery/news/items/latest_news' -%>
-                <%# render  refinery.news.items.recent_posts -%>
-                <%= render 'sidebar/subscribe' -%>
-                <%= render 'sidebar/blog' -%>
-              </div>
-
+                <%= render 'sidebar/sidebar' -%>
             </div>
           </div>
       </section>
 
-        
-    
       <footer>
         <%= render '/refinery/footer' -%>
       </footer>
-    </div><!-- end wrapper --> 
+    </div>
     <div class="dmtop">
       Наверх   
-    </div><!-- end dmtop -->      
+    </div>    
     <%= render '/refinery/javascripts' %>
     <% content_for :javascripts do %>
       <%= javascript_include_tag 'application.js' %>
@@ -77,38 +64,38 @@
     });  
 
     // Search
-      var $ctsearch = $( '#dmsearch' ),
-        $ctsearchinput = $ctsearch.find('input.dmsearch-input'),
-        $body = $('html,body'),
-        openSearch = function() {
-          $ctsearch.data('open',true).addClass('dmsearch-open');
-          $ctsearchinput.focus();
-          return false;
-        },
-        closeSearch = function() {
-          $ctsearch.data('open',false).removeClass('dmsearch-open');
-        };
+      // var $ctsearch = $( '#dmsearch' ),
+      //   $ctsearchinput = $ctsearch.find('input.dmsearch-input'),
+      //   $body = $('html,body'),
+      //   openSearch = function() {
+      //     $ctsearch.data('open',true).addClass('dmsearch-open');
+      //     $ctsearchinput.focus();
+      //     return false;
+      //   },
+      //   closeSearch = function() {
+      //     $ctsearch.data('open',false).removeClass('dmsearch-open');
+      //   };
 
-      $ctsearchinput.on('click',function(e) { e.stopPropagation(); $ctsearch.data('open',true); });
+      // $ctsearchinput.on('click',function(e) { e.stopPropagation(); $ctsearch.data('open',true); });
 
-      $ctsearch.on('click',function(e) {
-        e.stopPropagation();
-        if( !$ctsearch.data('open') ) {
+      // $ctsearch.on('click',function(e) {
+      //   e.stopPropagation();
+      //   if( !$ctsearch.data('open') ) {
 
-          openSearch();
+      //     openSearch();
 
-          $body.off( 'click' ).on( 'click', function(e) {
-            closeSearch();
-          } );
+      //     $body.off( 'click' ).on( 'click', function(e) {
+      //       closeSearch();
+      //     } );
 
-        }
-        else {
-          if( $ctsearchinput.val() === '' ) {
-            closeSearch();
-            return false;
-          }
-        }
-      });
+      //   }
+      //   else {
+      //     if( $ctsearchinput.val() === '' ) {
+      //       closeSearch();
+      //       return false;
+      //     }
+      //   }
+      // });
 
       // // Flexslider
       // $(window).load(function() {
