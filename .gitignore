@@ -98,4 +98,8 @@ vendor/extensions/**/spec/dummy
 
 
 # Ignore application configuration
-/config/application.yml
+/config/application.example.yml
+/config/database.example.yml
+/config/deploy.rb
+/config/initializers/devise.example.rb
+/config/initializers/secret_token.example.rb
