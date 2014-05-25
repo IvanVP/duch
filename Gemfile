@@ -7,11 +7,13 @@ gem 'rails', '3.2.17'
 
 group :development, :test do
   gem 'sqlite3'
+  gem "better_errors", ">= 0.3.2"
+  gem "binding_of_caller"
+  gem 'capistrano', '~> 2.15.5'
+  gem 'rvm-capistrano'
 end
 
 gem "figaro"
-gem "better_errors", ">= 0.3.2", :group => :development
-gem "binding_of_caller", :group => :development
 
 gem 'haml', '~> 4.0.5'
 gem 'thin', '~> 1.6.2'
@@ -21,11 +23,9 @@ gem 'thin', '~> 1.6.2'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'uglifier', '>= 1.0.3'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails', '~> 2.0.0'
@@ -38,10 +38,12 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
 
+group :production do
+  gem 'pg'
+  gem 'unicorn'
+end
 # Deploy with Capistrano
-# gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
