@@ -8,7 +8,7 @@
 /.bundle
 /vendor/bundle
 
-/app/assets
+
 
 # Ignore the default SQLite database.
 /db/*.sqlite3

@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *
+ *= require fonts
+ *= require style
+ *= require fhmm
+ *
+ *= require homebox
+ *= require prettyPhoto
+ *= require simister
+ *
+ *= require calendar
+ *
+ *= require_self
+ */
+input.button {
+  padding-bottom: 0px !important;
+}
+.white {
+        background: #ffffff;
+
+}
+.header.affix {
+     width: 100%;
+  }
+.infoline {
+    color: #ffffff;
+    font-weight: 600;
+    background: #796AE3;
+    font-size: 1.1em;
+}
+.infoline p {
+    margin-bottom: 0;
+}
+#home-boxes .copyright1 {
+  padding: 15px;
+}
+.infoline p.right {
+text-align: right;
+}
+.logo {
+  width: 100%;
+}
+.poster {
+  margin-bottom: 20px;
+}
+
+.navbar-nav > li > a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #83939C;
+  }
+
+  /*Background for innerpages    */
+.duchin{
+    background-image: image_url("maincut.png");
+}
+.duchin h2,
+.brcrm li ,
+.brcrm .breadcrumb {
+    color: #222;
+}
+.duchin li {
+    size:14px;
+}
+
+.brcrm{
+    background: none;
+    line-height: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #83939C;
+}
+h1 {
+  font-size: 26px;
+  margin-top: 0;
+}
+.widget {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.recent_posts_widget > li {
+  margin-top: 5px;
+  height: 0px;
+}
+
+#search_results>li, #recent_news_items li {
+  list-style-type: none;
+}
+
+article li {
+  margin-left: 20px;
+}
+article.news_item_truncated {
+  margin-bottom: 40px;
+}
