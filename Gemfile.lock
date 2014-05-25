@@ -5,7 +5,7 @@ GIT
     watu_table_builder (0.3.0)
 
 PATH
-  remote: gemsref20/refinerycms-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-2-0-stable
   specs:
     refinerycms (2.0.10)
       bundler (~> 1.0)
@@ -48,7 +48,7 @@ PATH
       refinerycms-core (= 2.0.10)
 
 PATH
-  remote: gemsref20/refinerycms-audiojs
+  remote: ../../..//gemsref20/refinerycms-audiojs
   specs:
     refinerycms-audiojs (0.0.1)
       dragonfly
@@ -56,7 +56,7 @@ PATH
       refinerycms-core
 
 PATH
-  remote: gemsref20/refinerycms-blog-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-blog-2-0-stable
   specs:
     refinerycms-blog (2.0.5)
       acts-as-taggable-on
@@ -67,20 +67,20 @@ PATH
       seo_meta (~> 1.3.0)
 
 PATH
-  remote: gemsref20/refinerycms-calendar-danielres-2.0
+  remote: ../../..//gemsref20/refinerycms-calendar-danielres-2.0
   specs:
     refinerycms-calendar (2.0.2)
       refinerycms-core (~> 2.0.3)
 
 PATH
-  remote: gemsref20/refinerycms-i18n-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-i18n-2-0-stable
   specs:
     refinerycms-i18n (2.0.2)
       refinerycms-core (~> 2.0.0)
       routing-filter (>= 0.2.3)
 
 PATH
-  remote: gemsref20/refinerycms-inquiries-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-inquiries-2-0-stable
   specs:
     refinerycms-inquiries (2.0.3)
       filters_spam (~> 0.2)
@@ -88,7 +88,7 @@ PATH
       refinerycms-settings (~> 2.0.1)
 
 PATH
-  remote: gemsref20/refinerycms-news-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-news-2-0-stable
   specs:
     refinerycms-news (2.0.1)
       friendly_id (~> 4.0.1)
@@ -96,33 +96,33 @@ PATH
       refinerycms-settings (~> 2.0.0)
 
 PATH
-  remote: gemsref20/refinerycms-page-images-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-page-images-2-0-stable
   specs:
     refinerycms-page-images (2.0.1)
       refinerycms-pages (~> 2.0.0)
 
 PATH
-  remote: gemsref20/refinerycms-portfolio-2-0-stable-fotorama
+  remote: ../../..//gemsref20/refinerycms-portfolio-2-0-stable-fotorama
   specs:
     refinerycms-portfolio (2.0.0)
       awesome_nested_set (~> 2.1.0)
       refinerycms-core (~> 2.0.0)
 
 PATH
-  remote: gemsref20/refinerycms-search-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-search-2-0-stable
   specs:
     refinerycms-search (2.0.0)
       refinerycms-core (~> 2.0.4)
 
 PATH
-  remote: gemsref20/refinerycms-settings-2-0-stable
+  remote: ../../..//gemsref20/refinerycms-settings-2-0-stable
   specs:
     refinerycms-settings (2.0.3)
       acts_as_indexed (~> 0.7.7)
       refinerycms-core (~> 2.0.10)
 
 PATH
-  remote: gemsref20/refinerycms-videojs-master
+  remote: ../../..//gemsref20/refinerycms-videojs-master
   specs:
     refinerycms-videojs (0.5.5.1)
       dragonfly
@@ -130,7 +130,7 @@ PATH
       refinerycms-core
 
 PATH
-  remote: gemsref20/refinerycms_membership
+  remote: ../../..//gemsref20/refinerycms_membership
   specs:
     refinerycms-memberships (2.0.3)
       nokogiri (~> 1.5.0)
