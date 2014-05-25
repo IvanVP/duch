@@ -49,31 +49,31 @@ end
 # gem 'debugger'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.0', :path => 'gemsref20/refinerycms-2-0-stable'
+gem 'refinerycms', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-2-0-stable'
 
 # Specify additional Refinery CMS Extensions here (all optional):
-gem 'refinerycms-i18n', '~> 2.0.0', :path => 'gemsref20/refinerycms-i18n-2-0-stable'
+gem 'refinerycms-i18n', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-i18n-2-0-stable'
 
- gem 'refinerycms-blog', '~> 2.0.0', :path => 'gemsref20/refinerycms-blog-2-0-stable'
- gem 'refinerycms-inquiries', '~> 2.0.0', :path => 'gemsref20/refinerycms-inquiries-2-0-stable'
- gem 'refinerycms-search', '~> 2.0.0', :path => 'gemsref20/refinerycms-search-2-0-stable'
- gem 'refinerycms-page-images', '~> 2.0.0', :path => 'gemsref20/refinerycms-page-images-2-0-stable'
+ gem 'refinerycms-blog', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-blog-2-0-stable'
+ gem 'refinerycms-inquiries', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-inquiries-2-0-stable'
+ gem 'refinerycms-search', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-search-2-0-stable'
+ gem 'refinerycms-page-images', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-page-images-2-0-stable'
 
 # gem "globalize3", "0.3.0"
 gem "globalize", "3.0.0"
 
-gem 'refinerycms-settings', :path => 'gemsref20/refinerycms-settings-2-0-stable'
+gem 'refinerycms-settings', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-settings-2-0-stable'
 
-gem 'refinerycms-memberships', :path => 'gemsref20/refinerycms_membership'
-gem 'refinerycms-audiojs', :path => 'gemsref20/refinerycms-audiojs'
-gem 'refinerycms-videojs', :path => 'gemsref20/refinerycms-videojs-master'
+gem 'refinerycms-memberships', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms_membership'
+gem 'refinerycms-audiojs', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-audiojs'
+gem 'refinerycms-videojs', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-videojs-master'
 
-gem 'refinerycms-news', '~> 2.0.0', :path => 'gemsref20/refinerycms-news-2-0-stable'
+gem 'refinerycms-news', '~> 2.0.0', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-news-2-0-stable'
 
 
-gem 'refinerycms-portfolio', :path => 'gemsref20/refinerycms-portfolio-2-0-stable-fotorama'
+gem 'refinerycms-portfolio', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-portfolio-2-0-stable-fotorama'
 
-gem 'refinerycms-calendar', :path => 'gemsref20/refinerycms-calendar-danielres-2.0'
+gem 'refinerycms-calendar', :path => '/home/duch/apps/duch/shared/gemsref20/refinerycms-calendar-danielres-2.0'
 
 
 gem 'stringex', '~> 2.5.2'
