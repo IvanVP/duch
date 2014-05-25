@@ -12,10 +12,11 @@ set :port, 30000
 # ssh_options[:keys] = "/home/ivan/.ssh/id_rsa.pub"
 set :user, "duch"
 set :group, "duch"
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :deploy_to, "/home/#{user}/#{application}"
 set :use_sudo, false
 set :deploy_via, :remote_cache
 # set :copy_strategy, :export
+set :rvm_type, :system
 
 
 default_run_options[:pty] = true
@@ -52,7 +53,6 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
     run "ln -nfs #{shared_path}/config/initializers/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
-    run "ln -nfs #{shared_path}/gemsref20/ #{release_path}/gemsref20/"
   end
   after "deploy:finalize_update", "deploy:symlink_config"
 
