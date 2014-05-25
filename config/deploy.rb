@@ -20,6 +20,12 @@ set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
+set :default_environment, {
+  # 'PATH'                    => "#{rvm_path}/gems/ruby/1.9.1/bin:#{rvm_bin_path}/bin:$PATH",
+  'GEM_HOME'        => "#{shared_path}/gemsref20}",
+  # 'GEM_PATH'        => "#{rvm_path}/gems/#{rvm_ruby_string}",
+  # 'BUNDLE_PATH'     => "#{rvm_path}/gems/#{rvm_ruby_string}"
+}
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
@@ -36,6 +42,8 @@ namespace :deploy do
     sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
     run "mkdir -p #{shared_path}/config"
     run "mkdir -p #{shared_path}/config/initializers"
+    run "mkdir -p #{shared_path}/gemsref20"
+    # set :uploads_dirs,    %w(gemsref20)
     put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     put File.read("config/application.example.yml"), "#{shared_path}/config/application.yml"
 
@@ -49,6 +57,7 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
     run "ln -nfs #{shared_path}/config/initializers/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
+    run "ln -nfs #{shared_path}/gemsref20/ #{release_path}/gemsref20/"
   end
   after "deploy:finalize_update", "deploy:symlink_config"
 
