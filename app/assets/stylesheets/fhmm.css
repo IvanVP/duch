@@ -321,10 +321,10 @@
 		background:none;
 		/*content: attr(data-hover);*/
 		overflow: hidden;
-		-webk/*it-transition: max-width 0.3s ease-in-out;
+		-webkit-transition: max-width 0.3s ease-in-out;
 		-moz-transition: max-width 0.3s ease-in-out;
 		-ms-transition: max-width 0.3s ease-in-out;
-		transiti*/on: max-width 0.3s ease-in-out;
+		transition: max-width 0.3s ease-in-out;
 	}
 	
 	.navbar-nav > li > a:hover:after{
