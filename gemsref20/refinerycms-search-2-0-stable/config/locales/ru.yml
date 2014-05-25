@@ -1,0 +1,10 @@
+ru:
+  refinery:
+    plugins:
+      refinerycms_search:
+        title: Поиск
+        description: Поиск для Refinery CMS
+    search:
+      show:
+        search_results_for: "Результаты поиска для '%{what}'"
+        no_results_for: "Ничего не найдено для '%{what}'."

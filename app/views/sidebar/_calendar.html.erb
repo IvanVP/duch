@@ -6,8 +6,9 @@
     <h6>
       <%#= link_to "<", date: Date.today.prev_month %>
     <%#= @date.strftime("%B %Y") %>
-    <%#= link_to ">", date: Date.today.next_month %>
+    
     Май
+    <%#= link_to ">", date: Date.today.next_month %>
     </h6>
   </div>
   <%= calendar do |date| %>
@@ -18,8 +19,9 @@
     <h6>
       <%#= link_to "<", date: Date.today.prev_month %>
     <%#= @date.strftime("%B %Y") %>
-    <%#= link_to ">", date: Date.today.next_month %>
+    
     Июнь
+    <%#= link_to ">", date: Date.today.next_month %>
     </h6>
   </div>
   <%= calendarnextmonth do |date| %>

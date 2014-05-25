@@ -1,0 +1,66 @@
+ru:
+  refinery:
+    plugins:
+      portfolio:
+        title: Галерея
+    portfolio:
+      admin:
+        items:
+          item:
+            gallery: Галерея
+            gallery_help: Добавить изображение в галерею
+            delete: Удалить изображение из галереи
+            edit: Редактировать изображение
+            view_live_html: Просмотреть галерею
+            no_items_yet: Пока нет изображений. Нажмите "Добавить изображение"
+          actions:
+            back_to_galleries: Вернуться в галереи
+            create_new: Добавить изображение
+            reorder: Изменить порядок
+            reorder_done: Закончить редактирование
+          records:
+            no_items_yet: Пока нет изображений
+            sorry_no_results: Нет результатов
+            title: Изображения
+        galleries:
+          actions:
+            add_image: Добавить изображение
+            create_new: Добавить галерею
+            reorder: Изменить порядок
+            reorder_done: Закончить редактирование
+            view_root_images: Посмотреть изображения верхнего уровня
+          records:
+            title: Галереи
+            sorry_no_results: Нет результатов
+            no_items_yet: Пока нет галерей. Нажмите "Добавить галерею"
+          gallery:
+            add_image: Добавить изображение в галерею
+            delete: Удалить галерею
+            edit: Редактировать галерею
+            item_count:
+              zero: нет изображений
+              one: 1 изображение
+              other: '%{count} изображений'
+            new_child: Добавить подгалерею
+            view_live_html: Просмотреть галерею <br/><em>(откроется в новом окне)</em>
+          form:
+            parent_gallery: Галерея верхнего уровня
+            parent_gallery_help: "Можно поместить галерею внутри другой галереи, создавая при этом многоуровневое портфолио. Выберите галерею верхнего уровня или оставьте поле пустым (галерея будет корневого уровня)."
+            cover_image: Изображение галереи
+            cover_image_help: Это изображение будет использоваться для отображения галереи.
+      galleries:
+        show:
+          other: Другие галереи
+  activerecord:
+    attributes:
+      'refinery/portfolio/gallery':
+        title: Заголовок
+        body: Текст
+        parent_id: Родитель
+        lft: Слева
+        rgt: Справа
+        depth: Глубина
+        type: Тип
+      'refinery/portfolio/item':
+        title: Заголовок
+        caption: Подзаголовок  

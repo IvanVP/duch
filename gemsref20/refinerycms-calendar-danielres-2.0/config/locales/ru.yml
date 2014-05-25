@@ -1,0 +1,102 @@
+ru:
+  time:
+    formats:
+      calendar_simple: "%B %d, %Y"
+      calendar_detailed: "%a, %B %d %Y - %H:%M"
+  refinery:
+    plugins:
+      venues:
+        title: Место проведения
+      calendar:
+        title: Календарь
+    calendar:
+      categories:
+        show:
+          no_upcoming_events: Нет будущих событий
+        categories_list:
+          title: Категории
+      admin:
+        shared:
+          links:
+            manage_events: Редактировать события
+            manage_venues: Редактировать места
+            manage_categories: Редактировать категории
+        venues:
+          actions:
+            create_new: Добавить место
+            reorder: Изменить порядок
+            reorder_done: Закончить изменения
+          records:
+            title: Место проведения
+            sorry_no_results: Ничего не найдено.
+            no_items_yet: Нет мест проведения. Нажмите "Добавить место"
+          venue:
+            view_live_html: Просмотреть место проведения <br/><em>(откроется в новом окне)</em>
+            edit: Редактировать это место
+            delete: Удалить место навсегда
+        categories:
+          actions:
+            create_new: Добавить категорию
+            reorder: Изменить порядок
+            reorder_done: Закончить изменения
+          records:
+            title: Категории
+            sorry_no_results: Ничего не найдено.
+            no_items_yet: Нет категорий. Нажмите "Добавить категорию"
+          category:
+            view_live_html: Просмотреть категорию <br/><em>(откроется в новом окне)</em>
+            edit: Редактировать категорию
+            delete: Удалить категорию
+        events:
+          actions:
+            create_new: Добавить событие
+            reorder: Изменить порядок
+            reorder_done: Закончить изменения
+          records:
+            title: Событие
+            sorry_no_results: Ничего не найдено.
+            no_items_yet: Нет событий. Нажмите "Добавить событие"
+          event:
+            view_live_html: Просмотреть событие <br/><em>(откроется в новом окне)</em>
+            edit: Редактировать событие
+            delete: Удалить событие
+      venues:
+        show:
+          other: Другие места проведения
+      events:
+        index:
+          featured_events: Рекомендованные события
+          upcoming_events: Ближайшие события
+          past_events: Прошедшие события
+          current_events: Текущие события
+        show:
+          details: 'Подробности события'
+          from: 'Начало'
+          to: 'Окончание'
+          other: Другие события
+        event:
+          register: 'Зарегистрироваться на событие'
+          view_on_map: 'Посмотреть на карте'
+          categories: Категории
+          venue: Место проведения
+          address: Адрес
+  activerecord:
+    attributes:
+      refinery/calendar/venue:
+        name: Название
+        address: Адрес
+        url: Ссылка
+        phone: Телефон
+      refinery/calendar/event:
+        title: Название
+        from: Начало
+        to: Окончание
+        image: Изображение
+        featured: Рекомендовать
+        venue: Место проведения
+        categories: Категории
+        registration_link: Ссылка для регистрации
+        excerpt: Кратко
+        description: Описание
+      refinery/calendar/category:
+        name: Название

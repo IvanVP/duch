@@ -1,0 +1,48 @@
+ru:
+  refinery:
+    plugins:
+      refinerycms_news:
+        title: "Новости"
+        description: Секция для создания новостей
+    news:
+      admin:
+        items:
+          item:
+            view_live_html: "Просмотреть новость <br/><em>(будет открыто в новом окне)</em>"
+            edit: "Редактировать новость"
+            delete: "Удалить новость"
+            published: Опубликовано
+          index:
+            create: "Создать новость"
+            item: "Новости"
+            no_items_yet: 'Новостей пока нет.'
+      shared:
+        items:
+          read_more: Читать далее
+          created_at: 'Создана %{when}'
+        archives: Архивы    
+      items:
+        show:
+          back_to_index: "Вернуться к новостям"
+          published: "Опубликована"
+          source: Источник
+        recent_posts:
+          recent_posts: "Последние публикации"
+        index:
+          published: "Опубликовано"
+          read_more: "Читать далее"
+          no_items_yet: Новостей пока нет
+          source: Источник
+        archive:
+          news_item_archive_for: 'Новости %{date}'
+          no_news_item_articles_posted: 'На дату %{date} новостей нет. Посетите страницу позже.'
+  activerecord:
+    attributes:
+      'refinery/news/item':
+        title: "Заголовок"
+        body: "Публикация"
+        publish_date: "Дата публикации"
+        expiration_date: "Дата окончания"
+        source: Источник
+    models:
+      'refinery/news/item': "Новость"
