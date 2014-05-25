@@ -20,12 +20,7 @@ set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
-set :default_environment, {
-  # 'PATH'                    => "#{rvm_path}/gems/ruby/1.9.1/bin:#{rvm_bin_path}/bin:$PATH",
-  'GEM_HOME'        => "#{shared_path}/gemsref20}",
-  # 'GEM_PATH'        => "#{rvm_path}/gems/#{rvm_ruby_string}",
-  # 'BUNDLE_PATH'     => "#{rvm_path}/gems/#{rvm_ruby_string}"
-}
+
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
