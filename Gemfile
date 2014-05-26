@@ -59,7 +59,7 @@ gem 'refinerycms-i18n', '~> 2.0.0', :path => '../../..//gemsref20/refinerycms-i1
  gem 'refinerycms-search', '~> 2.0.0', :path => '../../..//gemsref20/refinerycms-search-2-0-stable'
  gem 'refinerycms-page-images', '~> 2.0.0', :path => '../../..//gemsref20/refinerycms-page-images-2-0-stable'
 
-gem "globalize3", "0.3.1"
+gem "globalize3", "0.3.0"
 # gem "globalize", "3.0.0"
 
 gem 'refinerycms-settings', :path => '../../..//gemsref20/refinerycms-settings-2-0-stable'
