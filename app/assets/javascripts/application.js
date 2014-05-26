@@ -10,18 +10,3 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-
-//= require bootstrap
-//= require audio
-//= require audiojs_init
-//= require videojs_loader
-//= require fhmm
-//= require jquery.prettyPhoto
-
-// jQuery(function() {
-//   return $('#article_published_on').datepicker({
-//     dateFormat: 'yy-mm-dd'
-//   });
-// });
