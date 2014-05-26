@@ -10,3 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+//= require_tree ./shared
+//= require_tree ./frontend
+//= require jquery-migrate-1.2.1.min.js
+//= require bootstrap
