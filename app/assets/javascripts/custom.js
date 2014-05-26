@@ -1,7 +1,3 @@
-//= require jquery
-//= require jquery_ujs
-
-//= require bootstrap
 //= require audio
 //= require audiojs_init
 //= require videojs_loader
