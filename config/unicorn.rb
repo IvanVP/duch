@@ -1,4 +1,4 @@
-root = "/home/duch/apps/duch/current"
+root = "/home/duch/duch/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
