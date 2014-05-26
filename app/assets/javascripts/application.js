@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require_tree ./shared
-//= require_tree ./frontend
 //= require jquery-migrate-1.2.1.min.js
 //= require bootstrap
+//= require_tree 
