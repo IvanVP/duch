@@ -219,7 +219,7 @@ GEM
     filters_spam (0.4)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
-    globalize3 (0.3.1)
+    globalize3 (0.3.0)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       paper_trail (~> 2)
@@ -337,7 +337,7 @@ DEPENDENCIES
   capistrano (~> 2.15.5)
   coffee-rails (~> 3.2.1)
   figaro
-  globalize3 (= 0.3.1)
+  globalize3 (= 0.3.0)
   haml (~> 4.0.5)
   jbuilder
   jquery-rails (~> 2.0.0)
