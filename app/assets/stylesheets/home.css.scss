@@ -62,7 +62,7 @@ text-align: right;
 
   /*Background for innerpages    */
 .duchin{
-    background-image: image_url("maincut.png");
+    background-image: image_url("maincut.jpg");
 }
 .duchin h2,
 .brcrm li ,
@@ -103,4 +103,9 @@ article li {
 }
 article.news_item_truncated {
   margin-bottom: 40px;
+}
+.form-control {
+  font-size: 14px;
+  color: #83939C;
+  font-weight: 600;
 }
