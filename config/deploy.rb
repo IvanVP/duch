@@ -38,8 +38,6 @@ namespace :deploy do
     sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
     run "mkdir -p #{shared_path}/config"
     run "mkdir -p #{shared_path}/config/initializers"
-    run "mkdir -p #{shared_path}/gemsref20"
-    # set :uploads_dirs,    %w(gemsref20)
     put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     put File.read("config/application.example.yml"), "#{shared_path}/config/application.yml"
 
@@ -55,6 +53,11 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/initializers/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
   end
   after "deploy:finalize_update", "deploy:symlink_config"
+
+  desc "reload the database with seed data"
+  task :seed do
+    run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
+  end
 
 
   # namespace :assets do
