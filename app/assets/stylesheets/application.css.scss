@@ -8,13 +8,16 @@
 *= require fhmm
 *
 *= require homebox
+
 *= require prettyPhoto
 *= require simister
 *
 *= require calendar
-*
+*= require portfolio
 *= require_self
 */
+
+// 
 
 body {
   margin: 0px;
@@ -71,3 +74,4 @@ body {
   font-weight:bold;
   width:auto;
 }
+
