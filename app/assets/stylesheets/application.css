@@ -6,7 +6,7 @@
 *= require theme
 *
 *****************************
-*
+*= require jquery-ui-1.10.4.min
 *
 *
 *= require_self
