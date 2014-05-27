@@ -71,7 +71,7 @@ module Duch
     config.action_view.sanitized_allowed_attributes = %w( preview autoload loop controls src type )
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.01'
+    config.assets.version = '1.02'
     config.assets.initialize_on_precompile = true
 
     config.to_prepare do
