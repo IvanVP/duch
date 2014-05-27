@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body id="home-boxes" data-spy="scroll" data-offset="75">
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <div class="wrapper container">
+      <header class="header clearfix">
+        <%= render 'refinery/header' -%>
+      </header>
+      <%= render 'layouts/poster' -%>
+        
+      <section class="postwrapper clearfix">
+          <div class="container">
+            <div class="row"> 
+              <% if home_page? %>
+                <%= render '/homepage/homepage' -%>
+              <% else %>
+                <%= render 'layouts/main' -%>
+              <% end %>
+                <%= render 'sidebar/sidebar' -%>
+            </div>
+          </div>
+      </section>
+
+      <footer>
+        <%= render '/refinery/footer' -%>
+      </footer>
+    </div>
+    <div class="dmtop">
+      Наверх   
+    </div>    
+    <%= render '/refinery/javascripts' %>
+    <% content_for :javascripts do %>
+      <%#= javascript_include_tag 'application.js' %>
+      <%#= javascript_include_tag 'custom.js' %>
+    <% end %>
+ 
+
+ 
+    <%= render '/refinery/google_analytics' %>
+  </body>
+</html>
