@@ -12,7 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
-//= require jquery-migrate-1.2.1.min.js
-//= require bootstrap
-//= require_tree 
+
