@@ -73,7 +73,7 @@ gem 'refinerycms-news', '~> 2.0.0', :path => '../../..//gemsref20/refinerycms-ne
 
 gem 'refinerycms-portfolio', :path => '../../..//gemsref20/refinerycms-portfolio-2-0-stable-fotorama'
 
-gem 'refinerycms-calendar', :path => '../../..//gemsref20/refinerycms-calendar-danielres-2.0'
+# gem 'refinerycms-calendar', :path => '../../..//gemsref20/refinerycms-calendar-danielres-2.0'
 
 
 gem 'stringex', '~> 2.5.2'

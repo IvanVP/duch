@@ -11,12 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140521160312) do
-
-  create_table "categories_events", :id => false, :force => true do |t|
-    t.integer "event_id"
-    t.integer "category_id"
-  end
+ActiveRecord::Schema.define(:version => 20140521154307) do
 
   create_table "refinery_audio_files", :force => true do |t|
     t.string   "file_name"
@@ -89,68 +84,6 @@ ActiveRecord::Schema.define(:version => 20140521160312) do
   add_index "refinery_blog_posts", ["access_count"], :name => "index_refinery_blog_posts_on_access_count"
   add_index "refinery_blog_posts", ["id"], :name => "index_refinery_blog_posts_on_id"
   add_index "refinery_blog_posts", ["slug"], :name => "index_refinery_blog_posts_on_slug"
-
-  create_table "refinery_calendar_categories", :force => true do |t|
-    t.string   "name"
-    t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "refinery_calendar_category_translations", :force => true do |t|
-    t.integer  "refinery_calendar_category_id"
-    t.string   "locale"
-    t.string   "name"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-  end
-
-  add_index "refinery_calendar_category_translations", ["locale"], :name => "index_refinery_calendar_category_translations_on_locale"
-  add_index "refinery_calendar_category_translations", ["refinery_calendar_category_id"], :name => "index_f7e885d4d24cc936b1903ec2486407fc00b77af8"
-
-  create_table "refinery_calendar_event_translations", :force => true do |t|
-    t.integer  "refinery_calendar_event_id"
-    t.string   "locale"
-    t.string   "title"
-    t.string   "excerpt"
-    t.text     "description"
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-  end
-
-  add_index "refinery_calendar_event_translations", ["locale"], :name => "index_refinery_calendar_event_translations_on_locale"
-  add_index "refinery_calendar_event_translations", ["refinery_calendar_event_id"], :name => "index_ec3d2cb9bdea0fea558012b31c49229aa7dbaa96"
-
-  create_table "refinery_calendar_events", :force => true do |t|
-    t.string   "registration_link"
-    t.integer  "position"
-    t.boolean  "featured"
-    t.string   "slug"
-    t.integer  "venue_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-    t.datetime "starts_at"
-    t.datetime "ends_at"
-    t.integer  "image_id"
-  end
-
-  create_table "refinery_calendar_venues", :force => true do |t|
-    t.string   "name"
-    t.string   "address"
-    t.string   "url"
-    t.string   "phone"
-    t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "refinery_image_page_translations", :force => true do |t|
-    t.integer  "refinery_image_page_id"
-    t.string   "locale"
-    t.text     "caption"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
-  end
 
   add_index "refinery_image_page_translations", ["locale"], :name => "index_refinery_image_page_translations_on_locale"
   add_index "refinery_image_page_translations", ["refinery_image_page_id"], :name => "index_186c9a170a0ab319c675aa80880ce155d8f47244"
