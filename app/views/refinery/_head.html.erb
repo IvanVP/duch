@@ -8,7 +8,7 @@
   <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
   <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
   <%= yield :meta %>
-
+  <%= javascript_include_tag 'jquery-1.11.1.min.js' %>
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "home" %>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
