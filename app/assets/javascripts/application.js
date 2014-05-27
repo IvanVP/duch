@@ -10,8 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery-1.11.1.min
+//= require jquery-1.9.0.min
 //= require jquery_ujs
-//= require jquery-ui-1.10.4.min
+//= require jquery-ui.min
 
 
