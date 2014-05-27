@@ -37,7 +37,7 @@ Refinery::Pages.configure do |config|
   config.cache_pages_full = true
 
   # Set this to true to fully expand the page hierarchy in the admin
-  # config.auto_expand_admin_tree = true
+  config.auto_expand_admin_tree = false
 
   # config.layout_template_whitelist = ["application"]
 
