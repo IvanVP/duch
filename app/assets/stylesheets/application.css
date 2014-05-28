@@ -1,13 +1,22 @@
 /*
 *
 * *******From RefineryCMS****
-*
 *= require formatting
 *= require theme
 *
 *****************************
-*   jquery-ui-1.10.4.min
+**= require bootstrap
 *
+*****For all pages**********
+*= require fonts
+*= require style
+*= require fhmm
+*= require simister
+*
+***** Customized CSS **********
 *= require home
+*= require calendar
+*= require portfolio
+*= require custom
 *= require_self
 */
