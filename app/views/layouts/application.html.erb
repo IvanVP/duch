@@ -33,11 +33,37 @@
     </div>    
     <%= render '/refinery/javascripts' %>
     <% content_for :javascripts do %>
-      <%#= javascript_include_tag 'application.js' %>
-      <%#= javascript_include_tag 'custom.js' %>
+      <%= javascript_include_tag 'application.js' %>
+      <%= javascript_include_tag 'custom.js' %>
     <% end %>
  
+    <script>
+     (function($) {
+        "use strict"
 
+          $('.dropdown-toggle').dropdownHover().dropdown();
+            $(document).on('click', '.fhmm .dropdown-menu', function(e) {
+              e.stopPropagation()
+          })
+
+          jQuery('.header').affix({
+            offset: { top: $('.header').offset().top }
+          });
+
+          jQuery(window).scroll(function(){
+            if (jQuery(this).scrollTop() > 1) {
+                jQuery('.dmtop').css({bottom:"25px"});
+              } else {
+                jQuery('.dmtop').css({bottom:"-100px"});
+              }
+            });
+            jQuery('.dmtop').click(function(){
+              jQuery('html, body').animate({scrollTop: '0px'}, 800);
+              return false;
+          });  
+
+        })(jQuery);
+    </script>
  
     <%= render '/refinery/google_analytics' %>
   </body>
