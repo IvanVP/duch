@@ -1,3 +1,4 @@
+/*******************************/
 
 body {
   margin: 0px;
@@ -54,6 +55,11 @@ body {
   font-weight:bold;
   width:auto;
 }
+
+
+
+
+/**********************************************/
 
 #home-boxes {
   background: #796AE3;
@@ -138,6 +144,10 @@ h5 {
 .postwrapper{
   padding: 30px 0;
 }
+
+/*************************************/
+
+
 input.button {
   padding-bottom: 0px !important;
 }
@@ -177,8 +187,8 @@ text-align: right;
   }
 
   /*Background for innerpages    */
-.duchin{
-    background-image: image-url("maincut.jpg");
+/*.duchin{
+   background-image: image-url("maincut.jpg");
 }
 .duchin h2,
 .brcrm li ,
@@ -188,7 +198,7 @@ text-align: right;
 .duchin li {
     size:14px;
 }
-
+*/
 .brcrm{
     background: none;
     line-height: 10px;
@@ -225,4 +235,8 @@ article.news_item_truncated {
   color: #83939C;
   font-weight: 600;
 }
+
+
+
+/*********************************/
 
