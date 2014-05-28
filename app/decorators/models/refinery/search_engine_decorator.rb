@@ -2,7 +2,7 @@ Refinery::SearchEngine.class_eval do
   require 'stringex'
 
     # How many results should we show per page
-    RESULTS_LIMIT = 300
+    RESULTS_LIMIT = 50
 
   def self.search(query, page = 1)
     results = []
