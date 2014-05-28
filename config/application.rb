@@ -75,7 +75,7 @@ module Duch
     config.assets.initialize_on_precompile = true
 
     config.to_prepare do
-      Refinery.searchable_models = [Refinery::Page, Refinery::News::Item, Refinery::Image, Refinery::Audios::Audio, Refinery::Blog::Post, Refinery::Blog::Category, Refinery::Resource, Refinery::Portfolio::Gallery, Refinery::Videos::Video ]
+      Refinery.searchable_models = [Refinery::Page, Refinery::News::Item, Refinery::Image, Refinery::Audios::Audio, Refinery::Blog::Post, Refinery::Blog::Category, Refinery::Resource, Refinery::Portfolio::Gallery, Refinery::Calendar::Event, Refinery::Videos::Video ]
     end
 
   end
