@@ -34,7 +34,6 @@
     <%= render '/refinery/javascripts' %>
     <% content_for :javascripts do %>
       <%= javascript_include_tag 'application.js' %>
-      <%= javascript_include_tag 'refinery/admin/audio.js' %>
     <% end %>
  
     <script>
@@ -64,11 +63,19 @@
 
         })(jQuery);
 
-        $('audio').removeAttr('controls');
+        $(function() {
+          $('audio').removeAttr('controls');
+        });
+
 
         audiojs.events.ready(function() {  
             var as = audiojs.createAll();
           });
+
+        // $(function() {
+        //   $("#mainTable").width(100).height(200);
+        // });
+
     </script>
  
     <%= render '/refinery/google_analytics' %>

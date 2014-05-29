@@ -15,6 +15,7 @@
 //= require jquery-ui
 //= require bootstrap
 //= require fhmm
+//= require audio
 //= require videojs_loader
 //= require_tree 
 
