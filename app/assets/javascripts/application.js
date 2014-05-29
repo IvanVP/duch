@@ -15,7 +15,7 @@
 //= require jquery-ui
 //= require bootstrap
 //= require fhmm
-//
+//= require 'refinery/admin/audio'
 //= require audiojs_init
 //= require videojs_loader
 //= require_tree 
