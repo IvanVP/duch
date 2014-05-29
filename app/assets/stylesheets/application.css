@@ -12,6 +12,7 @@
 *= require style
 *= require fhmm
 *= require simister
+*= require audio
 *
 ***** Customized CSS **********
 *= require home
