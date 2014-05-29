@@ -7,7 +7,7 @@ gem 'rails', '3.2.17'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'pg'
+  
   gem "better_errors", ">= 0.3.2"
   gem "binding_of_caller"
   gem 'capistrano', '~> 2.15.5'
@@ -39,7 +39,7 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-
+gem 'pg'
 
 group :production do
    gem 'unicorn'
