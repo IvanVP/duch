@@ -35,7 +35,7 @@
       loop: false,
       preload: true,
       imageLocation: <%= image_tag 'player-graphics.gif' %>,
-      swfLocation: <%= asste_path 'audiojs.swf' %>,
+      swfLocation: <%= asset_path 'audiojs.swf' %>,
       useFlash: (function() {
         var a = document.createElement('audio');
         return !(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
