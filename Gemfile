@@ -7,6 +7,7 @@ gem 'rails', '3.2.17'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'pg'
   gem "better_errors", ">= 0.3.2"
   gem "binding_of_caller"
   gem 'capistrano', '~> 2.15.5'
@@ -38,7 +39,7 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'pg'
+
 
 group :production do
   gem 'pg'
@@ -80,3 +81,4 @@ gem 'refinerycms-calendar', :path => '../../../gemsref20/refinerycms-calendar-re
 gem 'stringex', '~> 2.5.2'
 
 gem "watu_table_builder", :require => "table_builder", :git => "git://github.com/watu/table_builder.git"
+gem 'acts-as-taggable-on', ' 3.1.0'
