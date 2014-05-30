@@ -50,10 +50,6 @@ Duch::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   config.assets.precompile += %w( 'refinery/refinery.css', 'refinery/admin/timepicker.addon.js'  )
 
-  #config.action_mailer.default_url_options = { host: 'localhost:3000' }
-  # config.action_mailer.default_url_options = { :host => ENV['SITE_NAME'] }
-
-
   # ActionMailer Config
   # Setup for production - deliveries, no errors raised
 
@@ -74,7 +70,11 @@ Duch::Application.configure do
   #   :enable_starttls_auto => true
   # }
 
-   # For Mandrill
+  #config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => ENV['SITE_NAME'] }
+
+
+  # For Mandrill
   config.action_mailer.smtp_settings = {
       :address   => "smtp.mandrillapp.com",
       :port      => 25,
