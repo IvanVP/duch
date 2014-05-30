@@ -1,0 +1,10 @@
+<% content_for :body do %>
+  <!-- login.html.erb -->
+  <%= raw @page.content_for(:body_above) if @page %>
+ 
+  <%= render :partial => 'message' %>
+  <%= render :partial => 'login_form' %>
+  <%= raw @page.content_for(:body_below) if @page %>
+<% end %>
+
+<%= render :partial => "/refinery/content_page", :locals => {:hide_sections => [:bodybelow, :bodyabove]} %>
