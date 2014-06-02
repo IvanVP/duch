@@ -4,15 +4,29 @@
 <div class="widget smallcal" >
   <div class="title">
     <h6>
-      <%#= link_to "<", date: Date.today.prev_month %>
-    <%#= @date.strftime("%B %Y") %>
-    
-    Май
-    <%#= link_to ">", date: Date.today.next_month %>
+     <%#= @events_by_date  %>
+      
+    <%#= l(@date.strftime("%B %Y")) %>
+    <%#= link_to "<", date: Date.today.prev_month %>
+    <%= link_to "<", date: @date.prev_month %>
+    <%= t(@date.strftime("%B")) %>
+    <%= link_to ">", date: @date.next_month %>
+
     </h6>
   </div>
-  <%= calendar do |date| %>
+  <%= calendar @date do |date| %>
     <%= date.day %>
+    <% if @events_by_date[date] %>
+    <%= link_to date, refinery.calendar_events_path(event) %>
+      <!-- <ul> -->
+        <%# @events_by_date[date].each do |event| %>
+          <!-- <li> -->
+          <%#= link_to event.title, refinery.calendar_events_path(event) %>
+
+         <!--  </li> -->
+        <%# end %>
+     <!--  </ul> -->
+    <% end %>
   <% end %>
 
   <div class="title">
@@ -24,9 +38,9 @@
     <%#= link_to ">", date: Date.today.next_month %>
     </h6>
   </div>
-  <%= calendarnextmonth do |date| %>
-    <%= date.day %>
-  <% end %>
+  <%#= calendarnextmonth do |datenext| %>
+    <%#= datenext.day %>
+  <%# end %>
   
 
 

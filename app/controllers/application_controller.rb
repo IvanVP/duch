@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   private
 
   def define_sidebar
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+     @events_by_date = Refinery::Calendar::Event.all.group_by(&:starts_at)
+    # @datenextmonth = params[:datenextmonth] ? Date.parse(params[:datenextmonth]) : Date.today.next_month
     @sidebar_news = Refinery::News::Item.latest(3)
     @sidebar_posts = Refinery::Blog::Post.recent(5)
     @sidebar_categories = Refinery::Blog::Category.all
