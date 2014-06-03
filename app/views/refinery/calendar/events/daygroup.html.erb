@@ -1,0 +1,9 @@
+<%# if @events.present? %>
+  <h2> Events on date </h2>
+  <%= @events.inspect %>
+  <ul class="events-list">
+  <% @events.each do |event| %>
+    <li><%= render event %> </li>
+  <% end -%>
+</ul>
+<%# end %>

@@ -8,6 +8,7 @@ Duch::Application.routes.draw do
 
   Refinery::Core::Engine.routes.prepend do
     get '/calendar/eventscal', :to => 'calendar/events#eventscal', :as => :eventscal
+    get '/calendar/daygroup', :to => 'calendar/events#daygroup', :as => :daygroup
     get '/calendar/get_events', :to => 'calendar/events#get_events', :as => :get_events
   end
 
