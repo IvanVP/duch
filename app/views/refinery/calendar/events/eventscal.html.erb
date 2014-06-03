@@ -1,0 +1,65 @@
+<div id='calendarbig'>
+</div>
+<div id = "desc_dialog" class="dialog" style ="display:none;">
+  <div id = "event_desc">
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+ 
+  
+  $(document).ready(function(){
+     
+    function showEventDetails(event){
+        $('#event_desc').html(event.description);
+        $('#desc_dialog').dialog({
+            title: event.title,
+            modal: true,
+            width: 500,
+            close: function(event, ui){
+                $('#desc_dialog').dialog('destroy')
+            }
+            
+        });
+        
+    }
+
+      $('#calendarbig').fullCalendar({
+          editable: false,
+          lang: 'ru',
+          allDaySlot: false,
+          scrollTime: '10:00:00',
+          weekMode: 'variable',
+          header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'month,agendaWeek,agendaDay'
+          },
+          defaultView: 'month',
+          height: 600,
+          slotMinutes: 30,
+          loading: function(bool){
+              if (bool) 
+                  $('#loading').show();
+              else 
+                  $('#loading').hide();
+          },
+          events: "/calendar/get_events",
+          timeFormat: { 
+              month: 'HH:mm', 
+              '': 'HH:mm{ - HH:mm}' 
+          },
+
+   
+          eventClick: function(event, jsEvent, view){
+              showEventDetails(event);
+          },
+      
+      
+      
+      
+      });
+  });
+</script>

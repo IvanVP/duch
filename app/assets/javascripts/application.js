@@ -17,7 +17,13 @@
 //= require fhmm
 //= require audio
 //= require videojs_loader
+//= require moment-with-langs
+//= require fullcalendar
+//= require lang-all
+//= require gcal
 //= require_tree 
+
+
 
 
 
