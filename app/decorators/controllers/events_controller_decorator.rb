@@ -12,6 +12,12 @@ Refinery::Calendar::EventsController.class_eval do
   def eventscal
   end
 
+  def daygroup
+    @events = Refinery::Calendar::Event.by_day
+    # starts_at(Time.now.to_date)
+  end
+
+
 
 
   # def index
