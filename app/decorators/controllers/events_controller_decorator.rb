@@ -13,7 +13,7 @@ Refinery::Calendar::EventsController.class_eval do
   end
 
   def daygroup
-    @events = Refinery::Calendar::Event.by_day
+    @events = Refinery::Calendar::Event.by_day(params[:daydate].to_date)
     # starts_at(Time.now.to_date)
   end
 

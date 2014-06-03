@@ -54,7 +54,14 @@ th {
     background-color: #8A7BF4;
     color: #fff;
 }
-
+.sidebarcal a{ 
+    font-weight: bold;
+}
+.sidebarcal .today a{ 
+    background-color: #8A7BF4;
+    color: #ccf;
+    font-weight: bold;
+}
 #table_calend {
     margin: 0 15px;
 }

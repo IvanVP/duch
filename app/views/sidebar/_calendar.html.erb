@@ -1,23 +1,35 @@
 <div class="title">
     <h5>Календарь</h5>
 </div>
-<div class="widget smallcal" >
+<div class="widget sidebarcal" >
   <div class="title">
     <h6>
      <%#= @events_by_date  %>
       
     <%#= l(@date.strftime("%B %Y")) %>
     <%#= link_to "<", date: Date.today.prev_month %>
-    <%= link_to "<", date: @date.prev_month %>
-    <%= t(@date.strftime("%B")) %>
-    <%= link_to ">", date: @date.next_month %>
+
+    <%= link_to '3', refinery.daygroup_path(:daydate => "2014-06-04") %>
+
+<!-- (:date => '2014-06-03') -->
+
+    <%#= link_to "<", date: @date.prev_month %>
+    <%#= t(@date.strftime("%B")) %>
+    <%#= link_to ">", date: @date.next_month %>
 
     </h6>
   </div>
   <%= calendar @date do |date| %>
-    <%= date.day %>
-    <% if @events_by_date[date] %>
-    <%= link_to date, refinery.calendar_events_path(event) %>
+
+    <%#= Refinery::Calendar::Event.by_day(date).inspect %>
+    <% if Refinery::Calendar::Event.by_day(date).any? %>
+      <%= link_to date.day, refinery.daygroup_path(:daydate => date) %>
+    <%  else %>
+      <%= date.day %>
+    <% end %>
+
+
+    <%#= link_to date, refinery.calendar_events_path(event) %>
       <!-- <ul> -->
         <%# @events_by_date[date].each do |event| %>
           <!-- <li> -->
@@ -26,7 +38,7 @@
          <!--  </li> -->
         <%# end %>
      <!--  </ul> -->
-    <% end %>
+    <%# end %>
   <% end %>
 
   <div class="title">
