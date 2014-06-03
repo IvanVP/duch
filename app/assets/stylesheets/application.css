@@ -5,7 +5,10 @@
 *= require theme
 *
 *****************************
-**= require bootstrap
+*= require bootstrap
+*= require jquery-ui
+*  require fullcalendar.print
+*= require fullcalendar
 *
 *****For all pages**********
 *= require fonts

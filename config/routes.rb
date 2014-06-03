@@ -5,6 +5,12 @@ Duch::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
+
+  Refinery::Core::Engine.routes.prepend do
+    get '/calendar/eventscal', :to => 'calendar/events#eventscal', :as => :eventscal
+    get '/calendar/get_events', :to => 'calendar/events#get_events', :as => :get_events
+  end
+
   mount Refinery::Core::Engine, :at => '/'
 
   # The priority is based upon order of creation:
