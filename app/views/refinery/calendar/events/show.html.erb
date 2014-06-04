@@ -1,19 +1,7 @@
+<%= render @event, state: :full %>
 
-<% content_for :body_content_title do %>
-  <%= @event.title %>
-<% end %>
-
-<% content_for :body_content_left do %>
-
-  <%= render @event, state: :full %>
-
-<% end %>
-
-<% content_for :body_content_right do %>
-  <% render 'refinery/calendar/categories/categories_list' %>
-<% end %>
-
+<% render 'refinery/calendar/categories/categories_list' %>
 
 <% content_for :stylesheets, stylesheet_link_tag('events') %>
 
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>

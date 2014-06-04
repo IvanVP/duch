@@ -8,9 +8,6 @@ Refinery::Calendar::Event.class_eval do
 
 
       where('refinery_calendar_events.starts_at > ?', date).where('refinery_calendar_events.starts_at < ?', date.tomorrow)
-        # .beginning_of_day..date.tomorrow.beginning_of_day)
-      #       .where('refinery_calendar_events.ends_at >= ?', Time.now)
-     # starting_on_day(date)
     end
   end  
 

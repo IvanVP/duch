@@ -14,22 +14,6 @@ Refinery::Calendar::EventsController.class_eval do
 
   def daygroup
     @events = Refinery::Calendar::Event.by_day(params[:daydate].to_date)
-    # starts_at(Time.now.to_date)
   end
 
-
-
-
-  # def index
-  #   @categories = Refinery::Blog::Category.all
-  #   @tags = Refinery::Blog::Category::ActsAsTaggableOn::Tag.all
-
-  # end
-
-  # def show
-  #   # @category = Refinery::Blog::Category.find(params[:id])
-  #   #     @posts = @category.posts.live.includes(:comments, :categories).page(params[:page])
-  #  
-  # end
-
-  end
+end
