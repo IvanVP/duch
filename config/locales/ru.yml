@@ -34,6 +34,7 @@ ru:
       default: ! '%d.%m.%Y'
       long: ! '%-d %B %Y'
       short: ! '%-d %b'
+      fmonth: ! '%b'
     month_names:
     -
     - января
@@ -247,6 +248,8 @@ ru:
       default: ! '%a, %d %b %Y, %H:%M:%S %z'
       long: ! '%d %B %Y, %H:%M'
       short: ! '%d %b, %H:%M'
+      calendar_simple: "%d %B %Y"
+      calendar_detailed: "%d %B %Y - %H:%M"
     pm: вечера
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
@@ -256,6 +259,7 @@ ru:
     errors:
       <<: *errors
   # Localization For AudioJS
+
   wym_tools:
     add_audio: Аудио
   refinery:
@@ -327,3 +331,21 @@ ru:
   # ДЛя VideoJS
   wym_tools:
     add_video: Видео
+  refinery:
+    calendar:
+      events:
+        calendar:
+          January: Январь
+          February: Февраль
+          March: Март
+          April: Апрель
+          May: Май
+          June: Июнь
+          July: Июль
+          August: Август
+          September: Сентябрь
+          October: Октябрь
+          November: Ноябрь
+          December: Декабрь
+
+

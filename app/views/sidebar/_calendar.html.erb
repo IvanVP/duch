@@ -4,56 +4,29 @@
 <div class="widget sidebarcal" >
   <div class="title">
     <h6>
-     <%#= @events_by_date  %>
-      
-    <%#= l(@date.strftime("%B %Y")) %>
-    <%#= link_to "<", date: Date.today.prev_month %>
-
-    <%= link_to '3', refinery.daygroup_path(:daydate => "2014-06-04") %>
-
-<!-- (:date => '2014-06-03') -->
-
-    <%#= link_to "<", date: @date.prev_month %>
-    <%#= t(@date.strftime("%B")) %>
-    <%#= link_to ">", date: @date.next_month %>
-
+    <%= t(@date.strftime("%B"), scope: 'refinery.calendar.events.calendar') %>
+    <%= @date.strftime("%Y") %>
     </h6>
   </div>
   <%= calendar @date do |date| %>
-
-    <%#= Refinery::Calendar::Event.by_day(date).inspect %>
     <% if Refinery::Calendar::Event.by_day(date).any? %>
       <%= link_to date.day, refinery.daygroup_path(:daydate => date) %>
     <%  else %>
       <%= date.day %>
     <% end %>
-
-
-    <%#= link_to date, refinery.calendar_events_path(event) %>
-      <!-- <ul> -->
-        <%# @events_by_date[date].each do |event| %>
-          <!-- <li> -->
-          <%#= link_to event.title, refinery.calendar_events_path(event) %>
-
-         <!--  </li> -->
-        <%# end %>
-     <!--  </ul> -->
-    <%# end %>
   <% end %>
 
   <div class="title">
     <h6>
-      <%#= link_to "<", date: Date.today.prev_month %>
-    <%#= @date.strftime("%B %Y") %>
-    
-    Июнь
-    <%#= link_to ">", date: Date.today.next_month %>
+    <%= t(@date.next_month.strftime("%B"), scope: 'refinery.calendar.events.calendar')%>
+    <%= @date.strftime("%Y") %>
     </h6>
   </div>
-  <%#= calendarnextmonth do |datenext| %>
-    <%#= datenext.day %>
-  <%# end %>
-  
-
-
+  <%= calendarnextmonth do |datenext| %>
+    <% if Refinery::Calendar::Event.by_day(datenext).any? %>
+      <%= link_to datenext.day, refinery.daygroup_path(:daydate => datenext) %>
+    <%  else %>
+      <%= datenext.day %>
+    <% end %>
+  <% end %>
 </div>

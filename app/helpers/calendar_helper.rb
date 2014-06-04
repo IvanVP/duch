@@ -7,7 +7,7 @@ module CalendarHelper
   end
 
   class CalendarDuch < Struct.new(:view, :date, :callback)
-    HEADER = %w[Пн Вт Ср Чт Пт Сб Вс]
+    HEADER = %w[пн вт ср чт пт сб вс]
     START_DAY = :monday
 
     delegate :content_tag, to: :view
@@ -50,7 +50,7 @@ module CalendarHelper
     end
   end
   class CalendarDuchNextMonth < Struct.new(:view, :date, :callback)
-    HEADER = %w[П В С Ч П С В]
+    HEADER = %w[пн вт ср чт пт сб вс]
     START_DAY = :monday
 
     delegate :content_tag, to: :view

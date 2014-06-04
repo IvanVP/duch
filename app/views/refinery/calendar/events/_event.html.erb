@@ -18,22 +18,21 @@
 <%= content_tag_for content_tag, event, class: ( event.image.present? ? "with-image" : "without-image" ) do -%>
 
   <% if state == :short %>
-
     <% if event.image.present? %>
-      <p class="event_image"><%= image_fu( event.image, '80x80#') %></p>
+      <%= image_fu( event.image, '100x100#') %>
     <% end %>
 
-    <time class="event_date" datetime="<%= event.from %>">
-      <%= l(event.from, format: :calendar_simple) %>
-    </time>
-    <h1><%= link_to event.title, refinery.calendar_event_path(event) %></h1>
-    <p class="event_excerpt"><%= event.excerpt %></p>
-
+     <div class="event_image">
+      <time class="event_date" datetime="<%= event.from %>">
+        <%= l(event.from, format: :calendar_simple) %>
+      </time>
+      <h2><%= link_to event.title, refinery.calendar_event_path(event) %></h2>
+      <p class="event_excerpt"><%= event.excerpt %></p>
+    </div>
 
   <% else %>
 
-      <h1><%= event.title %></h1>
-
+      <h2><%= event.title %></h2>
 
       <% if @event.excerpt %>
         <div class="event_excerpt">
@@ -41,8 +40,26 @@
         </div>
       <% end %>
 
+      <% if @event.from  %>
+        <hr />
+        <p class="event_date">
+            <% is_period = event.from && event.to && event.from != event.to %>
+            <% if is_period %>
+              <%= t('.from', default: 'Начало') %>:
+            <% end %>
+            <%= l(@event.from, format: :calendar_detailed) %>
+            <% if is_period %>
+              <br>
+              <%= t('.to', default: 'Конец') %>: <%= l(@event.to, format: :calendar_detailed) %>
+            <% end %>
+        </p>
+      <% end %>
+
       <% if @event.image.present? %>
+      <div>
         <p class="event_image"><%= image_fu( @event.image, '220x600') %></p>
+      </div>
+      <div class="clearfix eventfoto"></div>
       <% end %>
 
       <% if @event.registration_link.present? %>
@@ -68,21 +85,6 @@
       <% if @event.venue_address %>
         <hr />
         <p><%= t('.address') %>: <%= @event.venue_address %></p>
-      <% end %>
-
-      <% if @event.from  %>
-        <hr />
-        <p class="event_date">
-            <% is_period = event.from && event.to && event.from != event.to %>
-            <% if is_period %>
-              <%= t('.from', default: 'Начало') %>:
-            <% end %>
-            <%= l(@event.from, format: :calendar_detailed) %>
-            <% if is_period %>
-              <br>
-              <%= t('.to', default: 'Конец') %>: <%= l(@event.to, format: :calendar_detailed) %>
-            <% end %>
-        </p>
       <% end %>
 
       <%= categories %>
