@@ -99,6 +99,7 @@ vendor/extensions/**/spec/dummy
 
 
 # Ignore application configuration
+/config/application.yml
 /config/application.example.yml
 /config/application.working.yml
 /config/database.example.yml
