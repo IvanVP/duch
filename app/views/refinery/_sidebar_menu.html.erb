@@ -4,10 +4,10 @@
       :locals => {
       :dom_id => 'submenu',
       :css => 'menu',
-      :roots => refinery_menu_pages.reject{|p| p.parent_id != @page.root.id }
+      :roots => refinery_menu_pages.reject{|p| p.parent_id != (@page.root.id if @page) || ((Refinery::Portfolio::Gallery.root.id || Refinery::Calendar::Event.root.id) unless @page)}
     } %>
 
-<!-- :roots => refinery_menu_pages.reject{|p| p.parent_id != ((@page.root.id if @page) || (@gallery.root.id if @gallery) || (@event.root.id if @event) )} -->
+
 
   <%#roots.each_with_index do |page, index| %>
     <%# if page.children.present? && (children = page.children unless hide_children).present? && is_selected_branch && (!local_assigns[:menu_levels] || page.ancestors.length < local_assigns[:menu_levels])%>
@@ -31,7 +31,7 @@
         <%#end%>
     <%#end%>
   <%#end%>
-
+<%#end%>
 
 
 <%#
