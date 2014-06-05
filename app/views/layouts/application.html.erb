@@ -2,10 +2,10 @@
 <%= render '/refinery/html_tag' %>
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
-  <body id="home-boxes" data-spy="scroll" data-offset="75">
+  <body data-spy="scroll" data-offset="75">
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div class="wrapper container">
+    <div class="wrapper">
       <header class="header clearfix">
         <%= render 'refinery/header' -%>
       </header>

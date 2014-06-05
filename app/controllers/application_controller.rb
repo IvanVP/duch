@@ -12,8 +12,8 @@ class ApplicationController < ActionController::Base
     # @datenextmonth = params[:datenextmonth] ? Date.parse(params[:datenextmonth]) : Date.today.next_month
     @sidebar_news = Refinery::News::Item.latest(3)
     @sidebar_posts = Refinery::Blog::Post.recent(5)
-    # @sidebar_categories = Refinery::Blog::Category.all
-    # @sidebar_tags = Refinery::Blog::Post.tag_counts
+    @sidebar_categories = Refinery::Blog::Category.all
+    @sidebar_tags = Refinery::Blog::Post.tag_counts
   end
 
 end

@@ -103,7 +103,7 @@
 .fhmm .dropdown-menu .withoutdesc ul li:focus a,
 .fhmm .dropdown-menu .withoutdesc ul li a:hover,
 .fhmm .dropdown-menu .withoutdesc ul li a:focus {
-	color:#ffffff !important;
+	color:#ffffff;
 	text-decoration:none;
 }
 .fhmm .dropdown-menu .withoutdesc li:last-child {
@@ -216,7 +216,7 @@
 		min-height:inherit;
 		z-index: 99;
 		
-		background: #796AE3;
+		
 	}	
 	
 	.header.affix .navbar {margin-top:0px;}
@@ -248,7 +248,7 @@
 
 	.dropdown-menu > li > a:hover,
 	.dropdown-menu > li > a:focus {
-		background:#ffffff !important;
+		background:#ffffff;
 	}
 	
 	.navbar-default .navbar-nav > .open > a,
@@ -396,7 +396,7 @@
 .navbar-blue .navbar-nav > .disabled > a,
 .navbar-blue .navbar-nav > .disabled > a:hover,
 .navbar-blue .navbar-nav > .disabled > a:focus {
-	color: #ffffff !important;
+	color: #ffffff;
 	background-color: #007acc;
 }
 .navbar-blue .navbar-collapse,
@@ -459,8 +459,8 @@
   .navbar-blue .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-blue .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-blue .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff !important;
-    background-color: #007acc !important;
+    color: #ffffff ;
+    background-color: #007acc;
   }
   .navbar-blue .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-blue .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -496,7 +496,7 @@
 .navbar-red .navbar-nav > .disabled > a,
 .navbar-red .navbar-nav > .disabled > a:hover,
 .navbar-red .navbar-nav > .disabled > a:focus {
-	color: #ffffff !important;
+	color: #ffffff;
 	background-color: #710000;
 }
 .navbar-red .navbar-collapse,
@@ -560,8 +560,8 @@
   .navbar-red .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-red .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-red .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff !important;
-    background-color: #710000 !important;
+    color: #ffffff ;
+    background-color: #710000 ;
   }
   .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -590,7 +590,7 @@
 .navbar-orange .navbar-nav > .disabled > a,
 .navbar-orange .navbar-nav > .disabled > a:hover,
 .navbar-orange .navbar-nav > .disabled > a:focus {
-	color: #ffffff !important;
+	color: #ffffff ;
 	background-color: #f09c00;
 }
 .navbar-orange .navbar-collapse,
@@ -654,8 +654,8 @@
   .navbar-orange .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-orange .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-orange .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff !important;
-    background-color: #f09c00 !important;
+    color: #ffffff;
+    background-color: #f09c00;
   }
   .navbar-orange .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-orange .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -690,7 +690,7 @@
 .navbar-green .navbar-nav > .disabled > a,
 .navbar-green .navbar-nav > .disabled > a:hover,
 .navbar-green .navbar-nav > .disabled > a:focus {
-	color: #ffffff !important;
+	color: #ffffff;
 	background-color: #2c6100;
 }
 .navbar-green .navbar-collapse,
@@ -754,8 +754,8 @@
   .navbar-green .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-green .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-green .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff !important;
-    background-color: #2c6100 !important;
+    color: #ffffff;
+    background-color: #2c6100;
   }
   .navbar-green .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-green .navbar-nav .open .dropdown-menu > .disabled > a:hover,

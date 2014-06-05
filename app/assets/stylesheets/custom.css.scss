@@ -155,9 +155,7 @@ input.button {
         background: #ffffff;
 
 }
-.header.affix {
-     width: 100%;
-  }
+
 .infoline {
     color: #ffffff;
     font-weight: 600;
@@ -346,3 +344,75 @@ article.news_item_truncated {
     height: 22px !important;
 
 }
+
+// ********** Menu ***********
+
+// .nav > li > a:hover,
+// .nav > li > a:focus {
+
+//   background-color: #796AE3;
+// }
+// .nav-stacked > li > a {
+//   color: #fff;
+
+// }
+// #defaultmenu .navbar-nav > li > a:hover,
+// #defaultmenu .navbar-nav > li > a:focus 
+// .dropdown-menu > li > a:hover,
+// .dropdown-menu > li > a:focus{
+//   background-color: #796AE3 !important;
+//   color: #fff !important;
+// }
+
+#defaultmenu .navbar-nav li a:hover,
+#defaultmenu .navbar-nav li a:focus,
+ .navbar-nav .open li {
+  background-color: #796AE3 ;
+  color: #fff ;
+  border: none;
+}
+
+#defaultmenu .navbar-nav .dropdown-menu li a:hover,
+#defaultmenu .navbar-nav .dropdown-menu li a:focus,
+#defaultmenu .navbar-nav .dropdown-menu .open li {
+  background-color: #796AE3 ;
+  color: #fff ;
+  border: none;
+}
+#defaultmenu .navbar-nav .dropdown-menu li a{
+  background-color: #fff ;
+  color: #83939C ;
+  border: none;
+}
+
+// .navbar-default .navbar-nav .open > li > a {
+//    background-color: #796AE3 ;
+//   color: #fff ;
+//   border: none;
+// }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+ background-color: #796AE3 ;
+  color: #fff ;
+  border: none;
+}
+
+// .fhmm .navbar-nav > .open > a,
+// .fhmm .navbar-nav > .open > a:hover,
+// .fhmm .navbar-nav > .open > a:focus,
+// .fhmm .navbar-nav > li > a:hover,
+// .fhmm .navbar-nav > li > a:focus,
+// .fhmm .navbar-nav > .active > a,
+// .fhmm .navbar-nav > .active > a:hover,
+// .fhmm .navbar-nav > .active > a:focus,
+// .fhmm .navbar-nav > .disabled > a,
+// .fhmm .navbar-nav > .disabled > a:hover,
+// .fhmm .navbar-nav > .disabled > a:focus {
+//   background-color: #796AE3 !important;
+//   color: #fff !important;
+// }
