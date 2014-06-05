@@ -1,4 +1,40 @@
-<%
+
+
+ <%= render :partial => '/refinery/menu_side',
+      :locals => {
+      :dom_id => 'submenu',
+      :css => 'menu',
+      :roots => refinery_menu_pages.reject{|p| p.parent_id != @page.root.id }
+    } %>
+
+<!-- :roots => refinery_menu_pages.reject{|p| p.parent_id != ((@page.root.id if @page) || (@gallery.root.id if @gallery) || (@event.root.id if @event) )} -->
+
+  <%#roots.each_with_index do |page, index| %>
+    <%# if page.children.present? && (children = page.children unless hide_children).present? && is_selected_branch && (!local_assigns[:menu_levels] || page.ancestors.length < local_assigns[:menu_levels])%>
+        <%# page.children.each do |child| %>
+          <!-- <ul class=”firstLevelMenu”>
+            <li>
+              <%#= link_to child.title, refinery.url_for(child.url)%>
+            </li>
+          </ul> -->
+        <%#end%>
+        <%# page.children.each do |child| %>
+          <%#if child.children.present? %>
+           <!--  <ul class=”secondLevelMenu” style=”display: block”>
+              <%# child.children.each_with_index do |grandchild,i|%>
+                <li>
+                <%#= link_to grandchild.title, refinery.url_for(grandchild.url)%>
+                </li>
+              <%#end%>
+            </ul> -->
+          <%#end%>
+        <%#end%>
+    <%#end%>
+  <%#end%>
+
+
+
+<%#
   # Collect the root items.
   # ::Refinery::Menu is smart enough to remember all of the items in the original collection.
   if (roots = local_assigns[:roots] || (collection ||= refinery_menu_pages).roots).present?
@@ -7,7 +43,7 @@
     hide_children = Refinery::Core.menu_hide_children if hide_children.nil?
 -%>
 
-    <%= render :partial => '/refinery/menu_branch', 
+    <%#= render :partial => '/refinery/menu_branch', 
                 :collection => roots,
                 :locals => {
                  :hide_children => hide_children,
@@ -16,5 +52,5 @@
                  :link_css => true,
                  :apply_css => false #if you don't care about class='first' class='last' or class='selected' set apply_css to false for speed.
                } -%>
-  </ul>
-<% end -%>
+  <!-- </ul> -->
+<%# end -%>
