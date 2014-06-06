@@ -14,22 +14,23 @@
     link_html={:class => 'dropdown-toggle', :"data-toggle" =>'dropdown'} if menu_branch.children.present?
     
     li_class << "dropdown"
+    li_class << Refinery::Core.menu_css[:selected] if selected_page_or_descendant_page_selected?(local_assigns[:menu_branch]) unless Refinery::Core.menu_css[:selected].nil?
+    li_css = "class='#{li_class.join(' ')}'".html_safe
     
   else
     if menu_branch.children.present?
       ul_class = "class=dropdown-menu"
       
       li_class << "dropdown-submenu"
+      li_class << Refinery::Core.menu_css[:selected] if selected_page_or_descendant_page_selected?(local_assigns[:menu_branch]) unless Refinery::Core.menu_css[:selected].nil?
+      li_css = "class='#{li_class.join(' ')}'".html_safe
       
       link_html= {}
     end
   end
-  li_class << Refinery::Core.menu_css[:selected] if selected_page_or_descendant_page_selected?(local_assigns[:menu_branch]) unless Refinery::Core.menu_css[:selected].nil?
-  li_css = "class='#{li_class.join(' ')}'".html_safe
+  
 -%>
-<%#= li_class.compact.join(' ').inspect %>
-<%# <!-- <li<%# ['', css].compact.join(' ').gsub(/\ *$/, '').html_safe %>
-<!-- <li<%#= ['', li_class].compact.join(' ').gsub(/\ *$/, '').html_safe %> > -->
+
 <li <%= li_css %> >
 
 <%= link_to(menu_branch.title, refinery.url_for(menu_branch.url), link_html ) -%>

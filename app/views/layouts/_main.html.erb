@@ -1,49 +1,8 @@
 
 
 <div id="content" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-<%= render "/refinery/sidebar_menu" %>
-   
-    <%#= render :partial => "/refinery/sidebar_menu", :locals => {
-        :roots => @menu_pages.select{|p| p.parent_id == @page.root.id}
-      } %>
-   <!--  <div class="widget"> -->
-       <!--  <div class="title">
-         <h3>О нас</h3>
-        </div> -->
-      <!--   <ul class="nav nav-tabs nav-stacked"> -->
-         <%# if ( (children = menu_branch.children unless hide_children).present? &&
-          (!local_assigns[:menu_levels] || menu_branch.ancestors.length < local_assigns[:menu_levels]) ) -%>
-           <%#= render :partial => '/refinery/sidebar_menu', :collection => children,
-                 :locals => {
-                   :apply_css => local_assigns[:apply_css],
-                   :hide_children => true,
-                   :link_css => false,
-                   :menu_levels => 1
-                 } -%>
-                 <%# end -%>
-      <!--   </ul>                              
-    </div>-->
-</div> 
-
-
-
-
-
-<!-- <div id="content" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-    <div class="widget">
-        <div class="title">
-         <h3>О нас</h3>
-        </div>
-        <ul class="nav nav-tabs nav-stacked">
-            <li><a href="#">История школы</a></li>
-            <li><a href="#">Наши преподаватели</a></li>
-            <li><a href="#">Выездные тренинги</a></li>
-            <li><a href="#">Фотогалерея, видео</a></li>
-            <li><a href="#">Наше творчество</a></li>
-        </ul>                              
-    </div>
-</div> -->
-
+    <%= render "/refinery/sidebar_menu" %>
+</div>
 
 <div id="content" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
     <%= yield %>

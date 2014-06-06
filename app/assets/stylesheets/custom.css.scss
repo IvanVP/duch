@@ -401,7 +401,11 @@ article.news_item_truncated {
   border: none;
 }
 #defaultmenu .selected a,
-.nav-stacked  .selected a {
+.nav-stacked  .selected .open a:hover,
+.nav-stacked  .selected .open a:focus,
+.nav-stacked  .selected a,
+.nav-stacked  .selected .open a,
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus  {
   background-color: #796AE3;
   color: #fff ;
   border: none;
