@@ -1,6 +1,6 @@
-<% content_for :body do %>
-  <section class="postwrapper clearfix">
-    <div class="container">
+<%# content_for :body do %>
+  <section class="clearfix">
+    <!-- <div class="container">
       <div class="row">
         <div class="fullwidth clearfix">
           <div class="col-lg-5 col-sm-5 col-md-6 col-xs-12">
@@ -34,9 +34,13 @@
           <div class="clearfix"></div>
 
           <div class="title text-center">
-            <p class="lead"><%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %></p>
+            <p class="lead"><%#= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %></p>
           </div>
-          <div class="clearfix"></div>
+          <div class="clearfix"></div>  -->
+          <h1>Обратная связь</h1>
+          <br/>
+          <p>Вы можете отправить нам сообщение, используя форму.</p>
+          <p>Мы с Вами обязательно свяжемся в ближайшее время.</p>
   
           <div class='inquiries' id="contact1">
             <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
@@ -64,18 +68,18 @@
                 <div class="clearfix"></div>
                 <div class="title text-center">
                 <br/>
-                <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
+                <%= link_to t('.privacy_policy'), "/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
                 </div>
             <% end %>
           </div>
 
-        </div>
+        <!-- </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
-<% end %>
-<%= render :partial => "/refinery/content_page" %>
+<%# end %>
+<%#= render :partial => "/refinery/content_page" %>
 
 
         
