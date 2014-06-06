@@ -1,3 +1,5 @@
+ 
+
  <div id="contact1">
   <%= form_for Refinery::User.new, :as => 'refinery_user', :url => refinery_user_session_path do | f | %>
 
@@ -12,7 +14,8 @@
     <%= hidden_field_tag :redirect, params[:redirect] %>
     <%= hidden_field_tag :member_login, true %>
     <div class="text-center">
-      <%= f.submit "Войти", id: "submit1", class: "btn btn-lg btn-primary" %>
+      <%= f.submit t('refinery.members.shared.login'), id: "submit1", class: "btn btn-lg btn-primary" %>&nbsp;&nbsp;
+      <%= link_to t('refinery.members.shared.new'), new_member_path , class: "btn btn-lg btn-default" %>
     </div>
   <% end %>
 </div>

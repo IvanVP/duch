@@ -5,8 +5,9 @@
     :include_object_name => true
   } %>
 
-  <%= render :partial => "profile", :locals => {:f => f} %>
-  <%= render :partial => "password", :locals => {:f => f} %>
+  <%= render :partial => "form_account", :locals => {:f => f} %>
+  <%#= render :partial => "profile", :locals => {:f => f} %>
+  <%#= render :partial => "password", :locals => {:f => f} %>
 
   
   <fieldset class="submit">

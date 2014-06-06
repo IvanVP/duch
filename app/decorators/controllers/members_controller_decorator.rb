@@ -8,8 +8,8 @@ Refinery::Memberships::MembersController.class_eval do
     redirect_to root_path and return
   end
 
-  def new
-    redirect_to root_path and return
-  end
+  # def new
+  #   redirect_to root_path and return
+  # end
 
   end

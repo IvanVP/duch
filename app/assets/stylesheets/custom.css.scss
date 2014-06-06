@@ -416,4 +416,19 @@ article.news_item_truncated {
   border: none;
 }
 
-// ********** Galleries ***********
+// ********** Errors ***********
+#errorExplanation {
+  width: 80%;
+  margin: auto;
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 20px;
+    ul {
+      padding-left: 20px;
+    }
+
+}
+p.nonpassword{
+  font-size: 0.9em;
+  text-align: center;
+}
