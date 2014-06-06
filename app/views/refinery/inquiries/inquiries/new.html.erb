@@ -1,46 +1,8 @@
 <%# content_for :body do %>
   <section class="clearfix">
-    <!-- <div class="container">
-      <div class="row">
-        <div class="fullwidth clearfix">
-          <div class="col-lg-5 col-sm-5 col-md-6 col-xs-12">
-              <div class="miniboxes text-center" data-effect="helix">
-                  <div class="title"><h4>Адрес</h4></div>
-                  <p>г. Москва, м. Полежаевская,<br>
-                  4-я Магистральная улица, д.5,&nbsp;стр.2</p>
-              </div>
-          </div>
-          <div class="col-lg-4 col-sm-4 col-md-6 col-xs-12">
-              <div class="miniboxes text-center" data-effect="helix">
-                  <div class="title"><h4>Для связи</h4></div>
-                  <p><strong>Телефон:</strong> +7-(495)-502-5928<br>
-                  <strong>Факс:</strong> +7-(495)-502-5928</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-md-6 col-xs-12">
-              <div class="miniboxes text-center" data-effect="helix">
-                  <div class="title"><h4>Email</h4></div>
-                  <p>dyx@dyx.ru<br>
-                  <strong>Skype:</strong> dyx</p>
-              </div>
-          </div>
-
-           <div class="clearfix"></div>
-
-          <div class="title padding text-center">
-          <script type="text/javascript" charset="utf-8" style="margin:0 10px; width:100%;" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=qCNn287PYeKeSRdP6vUiKOw8Ev8dojUJ&width=100%&height=450"></script>
-          </div>
-
-          <div class="clearfix"></div>
-
-          <div class="title text-center">
-            <p class="lead"><%#= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %></p>
-          </div>
-          <div class="clearfix"></div>  -->
-          <h1>Обратная связь</h1>
+           <h1>Обратная связь</h1>
           <br/>
-          <p>Вы можете отправить нам сообщение, используя форму.</p>
-          <p>Мы с Вами обязательно свяжемся в ближайшее время.</p>
+          <p>Вы можете отправить нам сообщение, используя форму.<br/>Мы с Вами обязательно свяжемся в ближайшее время.</p>
   
           <div class='inquiries' id="contact1">
             <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
