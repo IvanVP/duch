@@ -36,11 +36,12 @@
     <script>
      (function($) {
         "use strict"
+          
 
           $('.dropdown-toggle').dropdownHover().dropdown();
             $(document).on('click', '.fhmm .dropdown-menu', function(e) {
               e.stopPropagation()
-          })
+          });
 
           jQuery('.header').affix({
             offset: { top: $('.header').offset().top }

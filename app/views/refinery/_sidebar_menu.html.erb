@@ -4,7 +4,9 @@
       :locals => {
       :dom_id => 'submenu',
       :css => 'menu',
-      :roots => refinery_menu_pages.reject{|p| p.parent_id != (@page.root.id if @page) || ((Refinery::Portfolio::Gallery.root.id || Refinery::Calendar::Event.root.id) unless @page)}
+      :roots => refinery_menu_pages.reject{|p| p.parent_id != ((@page.root.id if @page) || (Refinery::Portfolio::Gallery.root.id))}
+        # ((@page.root.id if @page) || (Refinery::Portfolio::Gallery.root.id))}
+       # || ((Refinery::Portfolio::Gallery.root.id || Refinery::Calendar::Event.root.id) unless @page)}
     } %>
 
 

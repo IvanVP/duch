@@ -379,17 +379,16 @@ article.news_item_truncated {
   color: #fff ;
   border: none;
 }
-#defaultmenu .navbar-nav .dropdown-menu li a{
+#defaultmenu .navbar-nav .dropdown-menu li a {
   background-color: #fff ;
   color: #83939C ;
   border: none;
 }
-
-// .navbar-default .navbar-nav .open > li > a {
-//    background-color: #796AE3 ;
-//   color: #fff ;
-//   border: none;
-// }
+#defaultmenu .navbar-nav .dropdown-menu .selected a {
+  background-color: #796AE3;
+  color: #fff ;
+  border: none;
+}
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -401,18 +400,20 @@ article.news_item_truncated {
   color: #fff ;
   border: none;
 }
+#defaultmenu .selected a,
+.nav-stacked  .selected a {
+  background-color: #796AE3;
+  color: #fff ;
+  border: none;
+}
 
-// .fhmm .navbar-nav > .open > a,
-// .fhmm .navbar-nav > .open > a:hover,
-// .fhmm .navbar-nav > .open > a:focus,
-// .fhmm .navbar-nav > li > a:hover,
-// .fhmm .navbar-nav > li > a:focus,
-// .fhmm .navbar-nav > .active > a,
-// .fhmm .navbar-nav > .active > a:hover,
-// .fhmm .navbar-nav > .active > a:focus,
-// .fhmm .navbar-nav > .disabled > a,
-// .fhmm .navbar-nav > .disabled > a:hover,
-// .fhmm .navbar-nav > .disabled > a:focus {
-//   background-color: #796AE3 !important;
-//   color: #fff !important;
-// }
+.dropdown-menu a {
+    color: #000 ;
+
+}
+
+.dropdown-menu .selected a {
+  background-color: #796AE3;
+  color: #fff ;
+  border: none;
+}
