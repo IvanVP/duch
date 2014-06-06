@@ -26,6 +26,13 @@
       li_css = "class='#{li_class.join(' ')}'".html_safe
       
       link_html= {}
+
+    else
+       if (selected_page_or_descendant_page_selected?(local_assigns[:menu_branch]) unless Refinery::Core.menu_css[:selected].nil?)
+          li_class << Refinery::Core.menu_css[:selected]
+          li_css = "class='#{li_class.join(' ')}'".html_safe
+         
+       end
     end
   end
   
