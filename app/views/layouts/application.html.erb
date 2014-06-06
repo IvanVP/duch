@@ -38,8 +38,12 @@
         "use strict"
           
 
-          $('.dropdown-toggle').dropdownHover().dropdown();
-            $(document).on('click', '.fhmm .dropdown-menu', function(e) {
+          // $('.dropdown-toggle').dropdownHover().dropdown();
+          //   $(document).on('click', '.fhmm .dropdown-menu', function(e) {
+          //     e.stopPropagation()
+          // });
+
+             $(document).on('click', '.dropdown-menu', function(e) {
               e.stopPropagation()
           });
 
