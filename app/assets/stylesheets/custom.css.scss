@@ -220,6 +220,7 @@ h1 {
 
 #search_results>li, #recent_news_items li {
   list-style-type: none;
+  margin: 15px 0;
 }
 
 article li {
@@ -431,4 +432,20 @@ article.news_item_truncated {
 p.nonpassword{
   font-size: 0.9em;
   text-align: center;
+}
+
+// ********** news ***********
+
+.news_item img{
+    margin-right: 25px;
+    border: 1px solid #83939C;
+   
+    -webkit-box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
+    -moz-box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
+    box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
+}
+.news_item ul,
+.news_item ol {
+    padding-left: 20px;
+  
 }
