@@ -20,7 +20,7 @@
 ***** Customized CSS **********
 *= require home
 *= require calendar
-*  portfolio
+*= require portfolio
 *= require custom
 *= require_self
 */
