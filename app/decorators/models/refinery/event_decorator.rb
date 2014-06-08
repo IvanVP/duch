@@ -7,7 +7,7 @@ Refinery::Calendar::Event.class_eval do
     def by_day (date = Time.now)
 
 
-      where('refinery_calendar_events.starts_at >= ?', date).where('refinery_calendar_events.starts_at <= ?', date.tomorrow)
+      where('refinery_calendar_events.starts_at >= ?', date).where('refinery_calendar_events.starts_at < ?', date.tomorrow)
     end
   end  
 
