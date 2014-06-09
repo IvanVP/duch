@@ -1,8 +1,8 @@
-<div class='gallery'>
-  <h2><%= @gallery.title if @gallery.present?%></h2>
-</div>
+<%= render '/refinery/content_page' %>
 
-  <%- if items.present? -%>
+<div class="pages">
+
+  <%- if @page.images -%>
     <div  class='fotorama'   id='gallery_images'
             data-width = "100%"
             data-ratio = "1600/900"
@@ -13,12 +13,12 @@
             data-autoplay = "true" 
             data-keyboard = "true"
             data-swipe = "true"
-       > 
-      <%= render items %>
+      >
+      <% @page.images.each do |image| %>              
+        <%= image_tag(image.url) %>
+      <% end %>
     </div>
-  <%- end -%>
+  <%- end %>
+</div>
 
- <%= raw @gallery.body  if @gallery.present? %>
-
- <%= render 'layouts/social' unless @galleries.present? -%>
-
+<%= render 'layouts/social' -%>

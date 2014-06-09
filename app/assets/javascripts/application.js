@@ -15,7 +15,6 @@
 //= require jquery-migrate-1.2.1.min
 //= require jquery_ujs
 //= require jquery-ui-1.9.1.min
-
 //= require bootstrap
 //= require fhmm
 //= require audio
@@ -24,6 +23,7 @@
 //= require fullcalendar
 //= require lang-all
 //= require gcal
+//= require fotorama
 //= require_tree 
 
 
