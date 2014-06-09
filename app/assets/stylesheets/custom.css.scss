@@ -81,7 +81,7 @@ body {
   /*webkit-box-shadow: 0 0 10px rgba(0,0,0,.25); -moz-box-shadow: 0 0 10px rgba(0,0,0,.25); box-shadow: 0 0 10px rgba(0,0,0,.25);*/
 }
 
-#home-boxes .copyright1 {
+.copyright1 {
     border-bottom: 0px solid #F2F2F2;
     padding: 25px 0 0px;
 }
@@ -165,9 +165,7 @@ input.button {
 .infoline p {
     margin-bottom: 0;
 }
-#home-boxes .copyright1 {
-  padding: 15px;
-}
+
 .infoline p.right {
 text-align: right;
 }
@@ -183,6 +181,11 @@ text-align: right;
     font-weight: 500;
     color: #83939C;
   }
+
+.copyright1 {
+  
+  padding: 20px;
+}
 
   /*Background for innerpages    */
 /*.duchin{
