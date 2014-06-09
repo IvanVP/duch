@@ -347,5 +347,12 @@ ru:
           October: Октябрь
           November: Ноябрь
           December: Декабрь
+  membres:
+    update:
+      successful: Данные пользователя успешно изменены.
+  devise:
+    failure:
+      already_authenticated: Вход в систему уже произведен.
+            
 
 
