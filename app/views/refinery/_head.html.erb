@@ -8,6 +8,7 @@
   <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
   <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
   <%= yield :meta %>
+  <%= render 'layouts/favicons' -%>
  
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "home" %>

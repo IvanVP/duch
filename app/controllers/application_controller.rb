@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def define_sidebar
-    @homepage = Refinery::Page.find_by_link_url("/")
+    @homepage = Refinery::Page.find_by_id("1")
     @date = params[:date] ? Date.parse(params[:date]) : Date.today
     # @events_by_date = Refinery::Calendar::Event.all.group_by(&:starts_at)
     # @sidebar_events  = Refinery::Calendar::Event.all
