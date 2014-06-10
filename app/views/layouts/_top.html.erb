@@ -1,38 +1,27 @@
 <section class="topbar topbar-blue clearfix">
     <div class="container">
         <div class="row">
-
-
             <div id="toplogo" class="col-lg-12 col-md-12 col-sm-12">
-
               <div class="col-lg-2 col-md-12 col-sm-12 text-right">
-                
-                    <a href="/" title="Главная">
-                      <img src=<%= @homepage.images[3].url if @homepage.images%> alt="Движение к Истоку">
-                    </a>
-                  
+                <a href="/" title="Главная">
+                  <%= image_tag(@homepage.images[3].url, :alt => "Движение к Истоку") if @homepage.images[3] %>
+                </a>
               </div>
 
                <div class="col-lg-4 col-md-12 col-sm-12 text-left">
                    <p> Школа психологического<br/>и духовного развития<br/>
-
                </div>
 
               <div class="col-lg-4 col-md-12 col-sm-12 text-right">
               <p class="right">Институт интенционально-<br/>синергетической  психологии</p>
-
               </div>
 
               <div class="col-lg-2 col-md-12 col-sm-12 ">
-                
-                    <a href="/" title="Главная">
-                      <img src=<%= @homepage.images[4].url if @homepage.images %> alt="Движение к Истоку">
-                    </a>
-                  </div>
-               
+                <a href="/" title="Главная">
+                  <%= image_tag(@homepage.images[4].url, :alt => "Движение к Истоку") if @homepage.images[4] %>
+                </a>
+              </div>
             </div>
-           
-
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end topbar -->
+        </div>
+    </div>
+</section>
