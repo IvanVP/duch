@@ -6,8 +6,8 @@
         <div class="logo">
           <a href="/" title="Главная">
             <%#= image_tag(@homepage.images[2].url, :alt => "Движение к Истоку") if @homepage.images[2] %>
-            
-            <img src=<%= image_tag(@homepage.images[2].url if @homepage.images%> alt="Движение к Истоку"> 
+
+            <img src=<%= image_tag(@homepage.images[2].url) if @homepage.images%> alt="Движение к Истоку"> 
           </a>
         </div>
       </div>
