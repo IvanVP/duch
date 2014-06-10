@@ -5,12 +5,15 @@ Refinery::Calendar::Event.class_eval do
 
   class << self
     def by_day (date = Time.now)
-
-
       where('refinery_calendar_events.starts_at >= ?', date).where('refinery_calendar_events.starts_at < ?', date.tomorrow)
     end
+    def by_day_extented (date = Time.now)
+      where('(refinery_calendar_events.starts_at <= ? AND refinery_calendar_events.ends_at >= ?) OR (refinery_calendar_events.starts_at >= ? AND refinery_calendar_events.starts_at < ?)', date, date, date, date.tomorrow)
+      # .where('refinery_calendar_events.ends_at >= ?', date)
+    end
   end  
-
+  # where('refinery_calendar_events.starts_at < ?', Time.now)
+  #   .where('refinery_calendar_events.ends_at >= ?', Time.now)
 
 private
   def ascii_title

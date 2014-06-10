@@ -27,6 +27,7 @@
         <%= l(event.from, format: :calendar_simple) %>
       </time>
       <h2><%= link_to event.title, refinery.calendar_event_path(event) %></h2>
+
       <p class="event_excerpt"><%= event.excerpt %></p>
     </div>
 
@@ -50,7 +51,7 @@
             <%= l(@event.from, format: :calendar_detailed) %>
             <% if is_period %>
               <br>
-              <%= t('.to', default: 'Конец') %>: <%= l(@event.to, format: :calendar_detailed) %>
+              <%= t('.to', default: 'Окончание') %>: <%= l(@event.to, format: :calendar_detailed) %>
             <% end %>
         </p>
       <% end %>

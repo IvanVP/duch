@@ -35,6 +35,7 @@ ru:
       long: ! '%-d %B %Y'
       short: ! '%-d %b'
       fmonth: ! '%b'
+      calendar_simple: "%d %B %Y"
     month_names:
     -
     - января
@@ -347,7 +348,7 @@ ru:
           October: Октябрь
           November: Ноябрь
           December: Декабрь
-  membres:
+  members:
     update:
       successful: Данные пользователя успешно изменены.
   devise:

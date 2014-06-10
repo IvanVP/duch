@@ -1,7 +1,7 @@
 Refinery::Page.class_eval do
   require 'stringex'
 
-  acts_as_indexed :fields => [:ascii_title,  :ascii_meta_keywords, :ascii_meta_description,                                :ascii_browser_title, :ascii_all_page_part_content]
+  acts_as_indexed :fields => [:ascii_title,  :ascii_meta_keywords, :ascii_meta_description, :ascii_browser_title, :ascii_all_page_part_content]
 
 private
 

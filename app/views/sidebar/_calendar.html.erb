@@ -9,7 +9,7 @@
     </h6>
   </div>
   <%= calendar @date do |date| %>
-    <% if Refinery::Calendar::Event.by_day(date).any? %>
+    <% if Refinery::Calendar::Event.by_day_extented(date).any? %>
       <%= link_to date.day, refinery.daygroup_path(:daydate => date) %>
     <%  else %>
       <%= date.day %>
@@ -23,7 +23,7 @@
     </h6>
   </div>
   <%= calendarnextmonth do |datenext| %>
-    <% if Refinery::Calendar::Event.by_day(datenext).any? %>
+    <% if Refinery::Calendar::Event.by_day_extented(datenext).any? %>
       <%= link_to datenext.day, refinery.daygroup_path(:daydate => datenext) %>
     <%  else %>
       <%= datenext.day %>

@@ -1,4 +1,4 @@
-<h2> В этот день будет проведено </h2>
+<h2> В этот день (<%= l(params[:daydate].to_date, format: :calendar_simple) %>) будет проведено </h2>
 <ul class="events-list">
   <% @events.each do |event| %>
     <li><%= render event %> </li>
