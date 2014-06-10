@@ -2,9 +2,14 @@
   <div class="tp-banner-container">
     <div class="tp-banner" >
       <% if home_page? %>
-        <%= image_tag(@homepage.images[0].url, :width => "100%", :alt => "Движение к Истоку - Постер") if @homepage.images[0] %>
+        <% if @homepage.images[0] %>
+          <%= image_tag(@homepage.images[0].url, :width => "100%", :alt => "Движение к Истоку - Постер") %>
+        <% end %>
+
       <% else %>
-        <%= image_tag(@homepage.images[1].url, :width => "100%", :alt => "Движение к Истоку - Врезка") if @homepage.images[1] %>
+        <% if @homepage.images[1] %>
+          <%= image_tag(@homepage.images[1].url, :width => "100%", :alt => "Движение к Истоку - Врезка") %>
+        <% end %>
       <% end %>
     </div>
   </div>       
