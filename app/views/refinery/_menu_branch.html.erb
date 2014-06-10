@@ -1,8 +1,7 @@
 <%
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
     css="class='dropdown'"
-    # css = "class='#{classes.join(' ')}'".html_safe
-  end
+     end
   ul_class = ""
   li_class = []
   link_html = {}

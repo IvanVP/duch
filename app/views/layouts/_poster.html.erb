@@ -2,9 +2,9 @@
   <div class="tp-banner-container">
     <div class="tp-banner" >
       <% if home_page? %>
-        <img width="100%" src= <%= image_path "main1.jpg" %> alt="Движение к истоку"></a>
+        <img width="100%" src= <%= @homepage.images[0].url %> alt="Движение к Истоку - Постер"></a>
       <% else %>
-        <img width="100%" src=<%= image_path "maincut.jpg" %> alt="Врезка - Движение к истоку">
+        <img width="100%" src=<%= @homepage.images[1].url %> alt="Движение к Истоку - Врезка">
       <% end %>
     </div>
   </div>       

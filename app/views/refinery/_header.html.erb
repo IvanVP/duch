@@ -5,7 +5,7 @@
       <div class="logo-wrapper clearfix">
         <div class="logo">
           <a href="/" title="Главная">
-            <img src=<%= image_path "logo1.png" %> alt="Движение к истоку">
+            <img src=<%= @homepage.images[2].url %> alt="Движение к Истоку">
           </a>
         </div>
       </div>
@@ -24,13 +24,14 @@
       </nav>
       <div class="callus clearfix">
         <ul>
-            <li><p><span>Email: </span> support@dyx.ru</p></li>
-            <li><p><span>Телефон: </span> +7-495-502-5928</p></li>
+            <li><p><span>Email: </span> <%= Refinery::Setting.find_or_set("contact_email", true)%></p></li>
+            <li><p><span>Телефон: </span><%= Refinery::Setting.find_or_set("contact_phone", true)%></p></li>
         </ul>
       </div>
     </div>
   </div>
-  <!-- <section class="topbar clearfix">
+<% unless home_page? %>
+  <section class="topbar clearfix">
     <div class="container infoline">
       <div class="row">
           <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
@@ -41,7 +42,9 @@
           </div>
       </div> 
     </div>
-  </section> -->
+  </section>
+<% end %>
+
 </div>
 
 

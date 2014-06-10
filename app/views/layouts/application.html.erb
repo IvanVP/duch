@@ -6,7 +6,7 @@
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div class="wrapper">
-      <%= render 'layouts/top' -%>
+      <%= render 'layouts/top' if home_page? -%>
       <header class="header clearfix">
         <%= render 'refinery/header' -%>
       </header>
@@ -70,18 +70,11 @@
           $('audio').removeAttr('controls');
         });
 
-
         audiojs.events.ready(function() {  
             var as = audiojs.createAll();
-            // $(".play-pause").width(25).height(40);
           });
 
-        // $(function() {
-        //   $(".play-pause").width(25).height(40);
-        // });
-
     </script>
- 
     <%= render '/refinery/google_analytics' %>
   </body>
 </html>

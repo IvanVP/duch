@@ -61,25 +61,6 @@ body {
 
 /**********************************************/
 
-#home-boxes {
-  background: #796AE3;
-}
-#home-boxes .jt-shadow {
-  box-shadow:none;
-}
-#home-boxes .callus li:last-child, 
-#home-boxes .social li:last-child,
-#home-boxes .callus li,
-#home-boxes .social li {
-  border:none;
-}
-#home-boxes .wrapper {
-  background:#ffffff;
-  margin-top:40px;
-  margin-bottom:40px;
-  padding:5px 10px;
-  /*webkit-box-shadow: 0 0 10px rgba(0,0,0,.25); -moz-box-shadow: 0 0 10px rgba(0,0,0,.25); box-shadow: 0 0 10px rgba(0,0,0,.25);*/
-}
 
 .copyright1 {
     border-bottom: 0px solid #F2F2F2;
@@ -156,7 +137,8 @@ input.button {
 
 }
 
-.infoline {
+.infoline,
+.infoline p {
     color: #ffffff;
     font-weight: 600;
     background: #796AE3;
@@ -164,6 +146,7 @@ input.button {
 }
 .infoline p {
     margin-bottom: 0;
+
 }
 
 .infoline p.right {
