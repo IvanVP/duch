@@ -1,0 +1,11 @@
+<article class="comment">
+  <div class="comment-content">
+      <h6 class="comment-author">
+          <%= t('by', :scope => 'refinery.blog.posts.comments', :who => comment.name) %>
+          <small class="comment-meta">
+          <%= t('time_ago', :scope => 'refinery.blog.posts.comments', :time => time_ago_in_words(comment.created_at)) %>
+          </small>
+      </h6>
+      <%= simple_format auto_link(comment.message.to_s) %>
+  </div>
+</article>

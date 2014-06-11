@@ -1,0 +1,19 @@
+<% content_for :body do %>
+  <div id="show_blog_post">
+    <%= render 'post' %>
+  </div>
+
+  <% if Refinery::Blog::Post.comments_allowed? %>
+    <%= render 'comments'%>
+  <% end %>
+<% end %>
+
+<% content_for :side_body do %>
+  <%= render :partial => "/refinery/blog/shared/categories" %>
+  <%= render :partial => "/refinery/blog/shared/tags" %>
+  <%= blog_archive_widget %>
+<% end %>
+
+<%= render :partial => "/refinery/content_page", :locals => { :remove_automatic_sections => true } %>
+
+<% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>

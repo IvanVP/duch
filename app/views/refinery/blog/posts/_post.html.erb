@@ -1,0 +1,93 @@
+<% flash.each do |key, value| %>
+ <div id='flash' class="flash flash_<%= key %>">
+   <%= value %>
+ </div>
+<% end %>
+<article id="blog_post" class="blog_post">
+  
+    <h1><%= @post.title %></h1>
+    <div class="post_meta">
+      <span><i class="fa fa-calendar"></i>&nbsp;
+        <time datetime="<%=l @post.published_at.to_date, :format => :default %>" class='posted_at'>
+          <%= l(@post.published_at.to_date, :format => :long) %>
+        </time>
+      </span>
+      &nbsp;
+
+      <span><i class="fa fa-user"></i>&nbsp;
+       <%= content_tag(:span, "Автор: #{@post.author.username}") if @post.author.present? %>
+      </span>
+      &nbsp;
+
+      <% if Refinery::Blog::Post.comments_allowed? %>
+        <span><i class="fa fa-comment"></i>&nbsp;
+          Комментарии:&nbsp;
+          <% if @post.comments.any? %>
+            <%= @post.comments.approved.count %>&nbsp;
+          <% else %>
+            нет&nbsp;
+          <% end %>
+        </span>
+      <% end %>
+
+      <% if (categories = @post.categories).any? %>
+      &nbsp;
+        <span><i class="fa fa-tag"></i>&nbsp;
+          Категория:&nbsp;
+          <% categories.each_with_index do |category, index| %>
+            <%= link_to category.title, refinery.blog_category_path(category) -%><%= ',' if index < ((categories.length) - 1) %>
+          <% end %>
+        </span>
+       <% end %>
+       
+
+       <% if (tags = @post.tags).any? %>
+       &nbsp;
+          <span><i class="fa fa-tag"></i>&nbsp;
+            Теги:&nbsp;
+           <%=raw tags.collect { |tag| link_to tag, refinery.blog_tagged_posts_path(tag.id, tag.name.parameterize) }.to_sentence %>
+          </span>
+       <% end %>
+    </div>
+
+    <section class='details'>
+      <% if @post.source_url.present? %>
+        <div class='blog_source'>
+          <%= "#{t('source', :scope => 'refinery.blog.posts.show')}: " %>
+          <%= link_to (@post.source_url_title.blank? ? @post.source_url : @post.source_url_title), @post.source_url %>
+        </div>
+      <% end %>
+    </section>
+  
+  
+  <div class="pagesimages">
+
+    <%- if @post.images.many? -%>
+      <div  class='fotorama'   id='gallery_images'
+              data-width = "100%"
+              data-ratio = "1600/900"
+              data-nav = "thumbs"
+              data-allowfullscreen = "true"
+              data-transition = "crossfade"
+              data-loop = "true"
+              data-autoplay = "true" 
+              data-keyboard = "true"
+              data-swipe = "true"
+        >
+        <% @post.images.each do |image| %>              
+          <%= image_tag(image.url) %>
+        <% end %>
+      </div>
+    <%- end %>
+  </div>
+
+  <%= @post.body.html_safe %>
+
+  
+  <%= render 'layouts/social' -%>
+  <div class="clearfix"></div>
+
+</article>
+
+<%= render :partial => '/refinery/draft_page_message' unless @post.nil? or @post.live? -%>
+<%= render 'nav' if next_or_previous?(@post) %>

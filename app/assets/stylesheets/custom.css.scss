@@ -424,26 +424,42 @@ p.nonpassword{
   text-align: center;
 }
 
-// ********** news ***********
+// ********** news and pages and blog ***********
 
-.news_item img{
-    margin-right: 25px;
+.news_item img,
+.page img,
+.blog_post img {
+    margin: 20px 25px 20px 10px;
     border: 1px solid #83939C;
-   
+    max-width: 602px;
+
     -webkit-box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
     -moz-box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
     box-shadow:  4px 4px 8px rgba(0,0,0,0.4);
 }
 .news_item ul,
-.news_item ol {
+.news_item ol,
+.blog_post ul,
+.blog_post ol,
+.page ul,
+.page ol {
     padding-left: 20px;
   
 }
+article.blog_post li {
+  margin-left: 0;
+}
+
+#blog_archive_widget {
+  margin-top: 30px;
+}
+
 
 // ********** Social ***********
 
 div.social {
   margin: 30px 0;
+  widows: 100%;
 }
 
 // ********** Top Logo ***********
@@ -457,4 +473,19 @@ div.social {
       margin: 30px 0;
       color: #796AE3;
     }
+}
+
+// ********** Pages ***********
+
+.post_meta {
+  margin: 20px 10px;
+}
+.post_meta a {
+  color: #796AE3;
+}
+
+.post_meta a:hover,
+.post_meta a:focus,
+ {
+  color: #01090C;
 }

@@ -1,0 +1,20 @@
+<% content_for :title, "Архивы за #{t(@archive_date.strftime('%B'), scope: "refinery.calendar.events.calendar")} #{@archive_date.strftime('%Y')}" %>
+<% content_for :body do %>
+  <h1>Архивы за <%= t(@archive_date.strftime('%B'), scope: "refinery.calendar.events.calendar") %> <%= @archive_date.strftime('%Y') %></h1>
+  <% if @posts.any? %>
+    <section id="blog_posts">
+      <%= render :partial => "/refinery/blog/shared/post", :collection => @posts %>
+    </section>
+  <% else %>
+    <p><%= t('.no_blog_articles_posted', :date => @archive_date.strftime('%B %Y')) %></p>
+  <% end %>
+<% end %>
+
+<% content_for :side_body do %>
+  <%= render :partial => "/refinery/blog/shared/categories" %>
+  <%= render :partial => "/refinery/blog/shared/tags" %>
+  <%= blog_archive_widget %>
+<% end %>
+
+<%= render :partial => "/refinery/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
