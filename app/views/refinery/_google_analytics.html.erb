@@ -1,12 +1,3 @@
-<!-- Yandex.Metrika informer -->
-<!-- <a style="position:absolute; left:-9999px;" href="https://metrika.yandex.ru/stat/?id=25245376&amp;from=informer"
-target="_blank" rel="nofollow">
-<img src="//bs.yandex.ru/informer/25245376/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0; position:absolute; left:-9999px;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:25245376,lang:'ru'});return false}catch(e){}"/>
-</a> -->
-<!-- /Yandex.Metrika informer -->
-
-<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
@@ -35,7 +26,6 @@ style="width:88px; height:31px; border:0; position:absolute; left:-9999px;" alt=
     <img src="//mc.yandex.ru/watch/25245376" style="position:absolute; left:-9999px;" alt="" />
   </div>
   </noscript>
-<!-- /Yandex.Metrika counter -->
 
 
 <script>
@@ -48,15 +38,3 @@ style="width:88px; height:31px; border:0; position:absolute; left:-9999px;" alt=
   ga('send', 'pageview');
 
 </script>
-
-
-<%# page_code = Refinery::Core.google_analytics_page_code.to_s.strip %>
-<%# unless local_request? or refinery_user? or page_code =~ /^(UA-xxxxxx-x)?$/ -%>
-<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
-<!-- <script>
-// var _gaq=[['_setAccount','<%#= page_code %>'],['_trackPageview'],['_trackPageLoadTime']];(function(d,t){
-// var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-// g.async=1;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)
-// }(document,'script'))
-</script> -->
-<%# end -%>
