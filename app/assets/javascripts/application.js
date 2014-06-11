@@ -24,6 +24,7 @@
 //= require lang-all
 //= require gcal
 //= require fotorama
+//= require jquery.prettyPhoto
 //= require_tree 
 
 

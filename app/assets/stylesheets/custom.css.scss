@@ -428,7 +428,8 @@ p.nonpassword{
 
 .news_item img,
 .page img,
-.blog_post img {
+.blog_post img,
+.homepage img {
     margin: 20px 25px 20px 10px;
     border: 1px solid #83939C;
     max-width: 602px;
@@ -442,7 +443,9 @@ p.nonpassword{
 .blog_post ul,
 .blog_post ol,
 .page ul,
-.page ol {
+.page ol,
+.homepage ul,
+.homepage ol  {
     padding-left: 20px;
   
 }
@@ -454,6 +457,12 @@ article.blog_post li {
   margin-top: 30px;
 }
 
+.homepage img {
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 820px;
+}
 
 // ********** Social ***********
 
