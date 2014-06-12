@@ -81,3 +81,5 @@ gem 'stringex', '~> 2.5.2'
 
 gem "watu_table_builder", :require => "table_builder", :git => "git://github.com/watu/table_builder.git"
 gem 'acts-as-taggable-on', ' 3.1.0'
+
+gem 'refinerycms-mailchimp', :path => '../../../gemsref20/refinerycms-mailchimp-refinery-2.0'

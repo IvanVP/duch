@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140527092712) do
+ActiveRecord::Schema.define(:version => 20140612074437) do
 
   create_table "categories_events", :id => false, :force => true do |t|
     t.integer "event_id"
@@ -189,6 +189,23 @@ ActiveRecord::Schema.define(:version => 20140527092712) do
   end
 
   add_index "refinery_inquiries_inquiries", ["id"], :name => "index_refinery_inquiries_inquiries_on_id"
+
+  create_table "refinery_mailchimp_campaigns", :force => true do |t|
+    t.string   "subject"
+    t.string   "mailchimp_campaign_id"
+    t.string   "mailchimp_list_id"
+    t.string   "mailchimp_template_id"
+    t.string   "from_email"
+    t.string   "from_name"
+    t.text     "body"
+    t.datetime "sent_at"
+    t.datetime "scheduled_at"
+    t.boolean  "auto_tweet",            :default => false
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
+  end
+
+  add_index "refinery_mailchimp_campaigns", ["id"], :name => "index_refinery_mailchimp_campaigns_on_id"
 
   create_table "refinery_membership_email_part_translations", :force => true do |t|
     t.integer  "refinery_membership_email_part_id"

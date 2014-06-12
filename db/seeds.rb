@@ -29,3 +29,6 @@ Refinery::Portfolio::Engine.load_seed
 
 # Added by Refinery CMS Venues extension
 Refinery::Calendar::Engine.load_seed
+
+# Added by Refinery CMS Recipes extension
+Refinery::Mailchimp::Engine.load_seed
