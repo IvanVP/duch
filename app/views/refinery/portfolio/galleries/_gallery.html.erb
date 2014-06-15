@@ -4,8 +4,8 @@
       <% if gallery.cover_image.present? %>
         <%= link_to refinery.portfolio_gallery_path(gallery) do %>
           <%= image_fu gallery.cover_image.image, 
-                '200x170#c',
-                {:title => gallery.cover_image.title} %>
+                '200x150#c',
+                {:title => gallery.title, alt: gallery.title } %>
         <% end %>
       <% end %>
     </div>
