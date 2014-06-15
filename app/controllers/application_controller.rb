@@ -4,6 +4,15 @@ class ApplicationController < ActionController::Base
   before_filter :define_sidebar
   before_filter :define_home_widgets, only: :home
 
+  protected
+
+  def after_sign_in_path_for(resource)
+    unless ((refinery_user? && current_refinery_user.has_role?(:superuser)) || (refinery_user? && current_refinery_user.has_role?(:refinery)))
+      refinery.profile_members_path
+    else
+      super
+    end
+  end
   private
 
   def define_sidebar
@@ -18,5 +27,6 @@ class ApplicationController < ActionController::Base
   def define_home_widgets
     @home_widgets=@homepage.children if @homepage.children.exists?
   end
+
 
 end

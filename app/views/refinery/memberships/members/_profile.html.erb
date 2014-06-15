@@ -25,14 +25,17 @@
       </tr>
       <%  
         if @member.member_until 
-          term = @member.member_until
-        else
-          term = "Всегда"
-        end 
-      %>
-      <tr>
-        <td><%= t('refinery.admin.members.member_until') %></td> <td> <%#= l(term.to_date, format: :long) %></td>
-      </tr>
+          term = @member.member_until %>
+          <tr>
+            <td><%= t('refinery.admin.members.member_until') %></td> <td> <%= l(term.to_date, format: :long) %></td>
+          </tr>
+       <% else %>
+          <tr>
+            <td><%= t('refinery.admin.members.member_until') %></td> <td>Всегда</td>
+          </tr>
+        <% end %>
+      
+      
     </tbody>
   </table>
 </div>

@@ -6,15 +6,10 @@
   } %>
 
   <%= render :partial => "form_account", :locals => {:f => f} %>
-  <%#= render :partial => "profile", :locals => {:f => f} %>
-  <%#= render :partial => "password", :locals => {:f => f} %>
-
   
   <fieldset class="submit">
     <%= render :partial => "form_actions",
       :locals => {
-      # :url => "localhost:3000",
-      #:only_path => true,
       :path  => "localhost:3000",
       :f => f,
       :continue_editing => false,
