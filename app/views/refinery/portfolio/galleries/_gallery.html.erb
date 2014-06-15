@@ -1,18 +1,22 @@
-<li id="<%= dom_id(gallery) %>" class="gallery">
-  <%= link_to refinery.portfolio_gallery_path(gallery) do %>
-    <% if gallery.cover_image.present? %>
-      <div class="image">
-        <%= image_fu gallery.cover_image.image, 
-              '200x150#c',
-              {:title => gallery.cover_image.title} %>
-      </div>
-    <% end %>
-
-    <div class="details">
-      <h2><%= gallery.title %></h2>
-      <% if ::Refinery::Portfolio.display_gallery_text %>
-        <%= raw gallery.description %>
+<div id="<%= dom_id(gallery) %>" class="gallery">
+  
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+      <% if gallery.cover_image.present? %>
+        <%= link_to refinery.portfolio_gallery_path(gallery) do %>
+          <%= image_fu gallery.cover_image.image, 
+                '200x170#c',
+                {:title => gallery.cover_image.title} %>
+        <% end %>
       <% end %>
     </div>
-  <% end %>
-</li>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 details">
+      <h2><%= link_to gallery.title, refinery.portfolio_gallery_path(gallery) %></h2>
+      <% if ::Refinery::Portfolio.display_gallery_text %>
+        <%= link_to refinery.portfolio_gallery_path(gallery) do %>
+          <%= raw gallery.description %>
+        <% end %>
+      <% end %>
+    </div>
+</div>
+<div class='clearfix'></div>

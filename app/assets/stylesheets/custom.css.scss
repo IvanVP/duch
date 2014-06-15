@@ -228,44 +228,17 @@ article.news_item_truncated {
 
 .galleries {
 
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
 
   .gallery {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin: 10px 20px 20px 0;
-    width: 100%;
-    background-color: #fff;
-
-    a {
-      color: #83939C;
-      text-decoration: none;
-    }
-
-    .image, .details {
-      padding: 0;
-      margin: 0;
-    }
+    margin: 20px 20px 20px 0;
 
     .image {
-      text-align: center;
-      display: inline;
-      width: 30%;
+      margin: 10px 0;
     }
 
     .details {
-      width: 65%;
-      float: right;
-
-      h2, p {
-        padding: 1px 5px;
-        margin: 5px 0 0 0;
-      }
-
-      h2 {
-        font-weight: 600;
-      }
+     margin: 20px 0;
     }
 
   }
@@ -288,7 +261,6 @@ article.news_item_truncated {
 }
 // ********** Profile Table ***********
 #member {
-  
     td{
       border: none;
       text-align: left;
@@ -301,10 +273,7 @@ article.news_item_truncated {
   list-style-type: none;
     li {
        padding: 0 0 20px 0;
-
     }
-
-
 }
 .event_excerpt {
   font-style: italic;
