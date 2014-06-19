@@ -6,6 +6,8 @@ Duch::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
 
+  get '/site_map', :to => 'application#site_map', :as => :site_map
+
   
   mount Refinery::Core::Engine, :at => '/'
 
@@ -13,6 +15,7 @@ Duch::Application.routes.draw do
     get '/calendar/eventscal', :to => 'calendar/events#eventscal', :as => :eventscal
     get '/calendar/daygroup', :to => 'calendar/events#daygroup', :as => :daygroup
     get '/calendar/get_events', :to => 'calendar/events#get_events', :as => :get_events
+
   end
 
 

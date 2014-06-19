@@ -10,6 +10,7 @@
   </div>
 
   <div class="portfolio-wrap clearfix"> 
+  
     <% @home_widgets.each do |widget| %>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 <%= cycle("first", "last") -%>">
         <div class="portfolio_classic">
@@ -17,24 +18,24 @@
             <a href="#">
 
             <%#= link_to widget.link_url do %>
-              <%= image_fu widget.images[0], '400x400#c', {:title => widget.title, :alt => widget.title } %>
+              <%= image_fu widget.images[0], '400x400#c', {:title => widget.title, :alt => widget.title } if widget.images[0] %>
             <%# end %>
             </a>
 
             <div class="ImageOverlayH blue"></div>
             <div class="Buttons StyleSc">
                 <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Мне нравится" title="" href="http://vk.com/club65405707"><i class="fa fa-vk"></i></a></span>
-                <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="<%= widget.link_url %>"><i class="fa fa-link"></i></a></span>
-                <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Увеличить" title="<%= widget.title %>" rel="prettyPhoto" href="<%= widget.images[0].url %>"><i class="fa fa-expand"></i></a></span>
+                <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Перейти" title="" href="<%= widget.link_url if  widget.link_url %>"><i class="fa fa-link"></i></a></span>
+                <span class="WhiteRounded"><a data-placement="bottom" data-toggle="tooltip" data-original-title="Увеличить" title="<%= widget.title if widget.title%>" rel="prettyPhoto" href="<%= widget.images[0].url if widget.images[0] %>"><i class="fa fa-expand"></i></a></span>
 
             </div>
-            <div class="StyleBe"><span><i class="fa fa-picture-o"></i>&nbsp;<%= widget.title %></span></div>
+            <div class="StyleBe"><span><i class="fa fa-picture-o"></i>&nbsp;<%= widget.title if widget.title %></span></div>
 
           </div>
 
           <div class="portfolio_desc">
             <div class="title1">
-              <h3><%= link_to widget.title, widget.link_url %></h3>
+              <h3><%= link_to widget.title, widget.link_url  if (widget.title || widget.link_url) %></h3>
               <hr>
               <p><%= raw widget.content_for(:body) %></p>
             </div>

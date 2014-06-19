@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   before_filter :define_sidebar
   before_filter :define_home_widgets, only: :home
 
+  def site_map
+    render 'site_map/site_map'
+  end
+
   protected
 
   def after_sign_in_path_for(resource)
